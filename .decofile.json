@@ -1,0 +1,5428 @@
+{
+  "decohub": {
+    "__resolveType": "deco-sites/technos/apps/decohub.ts"
+  },
+  "admin-app": {
+    "resolvables": {
+      "__resolveType": "deco-sites/admin/loaders/state.ts"
+    },
+    "__resolveType": "decohub/apps/admin.ts"
+  },
+  "Fun": {
+    "fonts": {
+      "fontFamily": "'Comic Sans MS'"
+    },
+    "mainColors": {
+      "primary": "#ff7598",
+      "base-100": "#ffee00",
+      "tertiary": "#c07ecc",
+      "secondary": "#75d1f0"
+    },
+    "buttonStyle": {
+      "--border-btn": "1px",
+      "--rounded-btn": "0.8rem",
+      "--btn-text-case": "lowercase",
+      "--btn-focus-scale": "0.95"
+    },
+    "__resolveType": "deco-sites/technos/sections/Theme/Theme.tsx",
+    "complementaryColors": {
+      "primary": {
+        "primary-content": "#000000"
+      },
+      "tertiary": {
+        "tertiary-content": "#000000"
+      },
+      "secondary": {
+        "secondary-content": "#000000"
+      }
+    }
+  },
+  "Home": {
+    "name": "Home",
+    "path": "/",
+    "sections": [
+      {
+        "__resolveType": "Default - Design System"
+      },
+      {
+        "__resolveType": "SEODefault"
+      },
+      {
+        "__resolveType": "analytics"
+      },
+      {
+        "__resolveType": "Header Global"
+      },
+      {
+        "__resolveType": "Home - Carousel"
+      },
+      {
+        "__resolveType": "Categorias - ImageGallery"
+      },
+      {
+        "__resolveType": "Os mais vendidos - ProductShelf"
+      },
+      {
+        "__resolveType": "Shoes - BannerGrid"
+      },
+      {
+        "__resolveType": "Nossas redes sociais - InfoCard/ImageGallery"
+      },
+      {
+        "__resolveType": "Sobre a loja - InfoCard"
+      },
+      {
+        "__resolveType": "Footer Global"
+      },
+      {
+        "form": {
+          "name": {
+            "placeholder": "Digite seu nome"
+          },
+          "email": {
+            "placeholder": "Digite seu e-mail"
+          },
+          "button": {
+            "label": "Cadastrar"
+          }
+        },
+        "text": "<p><span style=\"color: rgb(143, 143, 159);\">Inscreva-se em nossa newsletter e </span></p><p><strong style=\"color: rgb(30, 14, 98);\">Ganhe 10% Off em sua primeira compra!</strong></p>",
+        "modalActive": true,
+        "__resolveType": "deco-sites/technos/sections/Newsletter/NewsletterModal.tsx",
+        "modalSignExpiredDate": 360,
+        "modalCloseExpiredDate": 10
+      }
+    ],
+    "__resolveType": "$live/pages/LivePage.tsx"
+  },
+  "Site": {
+    "seo": {
+      "type": "website",
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3446/5512e2d5-9da6-4791-8f9e-b62c1d9dacb8",
+      "title": "Technos | Site Oficial | Relógios Femininos e Masculinos",
+      "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3446/ab108a18-f2d9-478b-9c4a-ec7d51b9cb5f",
+      "jsonLDs": [],
+      "canonical": "https://www.technos.com.br/",
+      "noIndexing": true,
+      "description": "Relógios Technos femininos e masculinos com qualidade e estilo. Entrega garantida. Produtos Originais. Parcele em até 10x.",
+      "titleTemplate": "%s | Technos | Site Oficial | Relógios Femininos e Masculinos",
+      "descriptionTemplate": "%s | Technos | Site Oficial | Relógios Femininos e Masculinos"
+    },
+    "theme": {
+      "__resolveType": "Fashion theme"
+    },
+    "global": [
+      {
+        "trackingIds": [
+          "GTM-MT2L5D"
+        ],
+        "__resolveType": "website/sections/Analytics/Analytics.tsx"
+      },
+      {
+        "__resolveType": "algolia/sections/Analytics/Algolia.tsx"
+      },
+      {
+        "__resolveType": "analytics/sections/Analytics/DecoAnalytics.tsx"
+      }
+    ],
+    "routes": [
+      {
+        "__resolveType": "website/loaders/pages.ts"
+      },
+      {
+        "__resolveType": "website/loaders/redirects.ts"
+      }
+    ],
+    "caching": {
+      "directives": []
+    },
+    "commerce": {
+      "platform": "other"
+    },
+    "platform": "vtex",
+    "errorPage": {
+      "__resolveType": "pages-offline-b9c52de8c7b3"
+    },
+    "__resolveType": "deco-sites/technos/apps/site.ts"
+  },
+  "vtex": {
+    "appKey": {
+      "name": "VTEX_APP_KEY",
+      "encrypted": "8743320a7efa8cda4acaadb91cddaf95c237e168693d964d4527b558f09b522751c5d5b5789ab3084a35ae27f4420e3e",
+      "__resolveType": "website/loaders/secret.ts"
+    },
+    "account": "technos",
+    "appToken": {
+      "name": "VTEX_APP_TOKEN",
+      "encrypted": "a111f1ed5510b0d595f6e82336ccf45cc7c663802047914f3e6854ff55811313519f7b086553a43d2388cdcd3afdafe1fea84d83ab4925e708315eeb4336e0dec48859421a803d589b0bfc86bdab73111595a3d2b092f4c39581d14c80ee8d9c39c2612d784f7ab83fbd534b62e321f8c2d6d4fb274879721c3d9bedcb4e5b0b57ad581360762167d9239afc37752f74",
+      "__resolveType": "website/loaders/secret.ts"
+    },
+    "platform": "vtex",
+    "publicUrl": "technos.com.br",
+    "__resolveType": "decohub/apps/vtex.ts",
+    "defaultSegment": {
+      "channel": "9",
+      "countryCode": "BRA",
+      "cultureInfo": "pt-BR",
+      "currencyCode": "BRL",
+      "channelPrivacy": "public",
+      "currencySymbol": "R$"
+    },
+    "usePortalSitemap": true
+  },
+  "test1": {
+    "strings": {
+      "image": {
+        "alt": " ",
+        "src": "/NKP Modal.jpg"
+      },
+      "texto": "Desconto 10% agora",
+      "bemvindo": "Bem-Vindo"
+    },
+    "checkBoxTxt": "Eu concordo com os termos",
+    "inputLabels": {
+      "email": "E-mail",
+      "primeiro": "Primeiro nome"
+    },
+    "inputStrings": {
+      "email": "E-mail",
+      "btnEnviar": "Enviar",
+      "checkBoxTxt": "Eu aceito os termos de uso",
+      "primeiroNome": "Primeiro nome:",
+      "placeholderNome": "Digite o nome...",
+      "placeholderEmail": "Digite o E-mail..."
+    },
+    "__resolveType": "deco-sites/technos/sections/Newsletter/NewsletterModal.NuncaPerdi.tsx"
+  },
+  "Luxury": {
+    "fonts": {
+      "fontFamily": "'Georgia'"
+    },
+    "mainColors": {
+      "primary": "#000000",
+      "base-100": "#09090b",
+      "tertiary": "#513448",
+      "secondary": "#152747"
+    },
+    "buttonStyle": {
+      "--border-btn": "1px",
+      "--rounded-btn": "0.2rem",
+      "--btn-text-case": "normal-case",
+      "--btn-focus-scale": "0.95"
+    },
+    "__resolveType": "deco-sites/technos/sections/Theme/Theme.tsx",
+    "complementaryColors": {
+      "base": {
+        "base-200": "#171618",
+        "base-300": "#2e2d2f",
+        "base-content": "#dca54c"
+      }
+    }
+  },
+  "navbar": {
+    "items": [
+      {
+        "url": "/feminino",
+        "name": "Feminino",
+        "@type": "SiteNavigationElement",
+        "image": [
+          {
+            "url": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/7733d479-0fd1-4f33-bed9-6f9e170655d6",
+            "@type": "ImageObject"
+          }
+        ],
+        "children": [
+          {
+            "url": "/feminino/saias",
+            "name": "Novidades",
+            "@type": "SiteNavigationElement",
+            "children": [
+              {
+                "url": "/feminino/vestidos",
+                "name": "Mais vendidos",
+                "@type": "SiteNavigationElement"
+              },
+              {
+                "url": "/feminino/vestidos",
+                "name": "Parcerias",
+                "@type": "SiteNavigationElement"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "url": "/masculino",
+        "name": "Masculino",
+        "@type": "SiteNavigationElement",
+        "image": [
+          {
+            "url": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/575c3b0f-1a2e-4ecb-aaad-532671dc553d",
+            "@type": "ImageObject"
+          }
+        ],
+        "children": [
+          {
+            "url": "/masculino",
+            "name": "Novidades",
+            "@type": "SiteNavigationElement",
+            "children": [
+              {
+                "url": "/masculino",
+                "name": "Mais vendidos",
+                "@type": "SiteNavigationElement"
+              },
+              {
+                "url": "/masculino",
+                "name": "Parcerias",
+                "@type": "SiteNavigationElement"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "url": "/sale",
+        "name": "Sale",
+        "@type": "SiteNavigationElement",
+        "image": [
+          {
+            "url": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/5e9310c0-c725-4643-ade3-f92a505bd1d6",
+            "@type": "ImageObject"
+          }
+        ],
+        "children": [
+          {
+            "url": "/feminino",
+            "name": "Feminino",
+            "@type": "SiteNavigationElement",
+            "children": [
+              {
+                "url": "/feminino",
+                "name": "Camisetas",
+                "@type": "SiteNavigationElement"
+              },
+              {
+                "url": "/feminino",
+                "name": "Camisas",
+                "@type": "SiteNavigationElement"
+              }
+            ]
+          },
+          {
+            "url": "/masculino",
+            "name": "Masculino",
+            "@type": "SiteNavigationElement",
+            "children": [
+              {
+                "url": "/masculino",
+                "name": "Camisetas",
+                "@type": "SiteNavigationElement"
+              },
+              {
+                "url": "/masculino",
+                "name": "Regatas",
+                "@type": "SiteNavigationElement"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "url": "/linktree",
+        "name": "Link Tree",
+        "@type": "SiteNavigationElement"
+      }
+    ],
+    "__resolveType": "commerce/loaders/navbar.ts"
+  },
+  "Matheus": {
+    "title": "Take a look at our benefits",
+    "benefits": [
+      {
+        "icon": "Truck",
+        "label": "Free Shipping Worldwide",
+        "description": "Shop online with no additional fees!"
+      },
+      {
+        "icon": "Phone",
+        "label": "24/7 Online Support",
+        "description": "Instant assistance anytime"
+      },
+      {
+        "icon": "Discount",
+        "label": "15% on the first purchase",
+        "description": "Discount for new customers"
+      },
+      {
+        "icon": "ArrowsPointingOut",
+        "label": "Hassle-Free Returns",
+        "description": "Easy and Convenient Return Policy"
+      }
+    ],
+    "description": "Matheus",
+    "__resolveType": "deco-sites/technos/sections/Content/Benefits.tsx"
+  },
+  "weather": {
+    "__resolveType": "decohub/apps/weather.ts"
+  },
+  "Deco HUB": {
+    "__resolveType": "deco-sites/technos/apps/decohub.ts"
+  },
+  "FAQ - 01": {
+    "title": "FAQ",
+    "layout": {
+      "variation": "Side to side",
+      "headerAlignment": "left"
+    },
+    "questions": [
+      {
+        "answer": "<p>Placing an order on our fashion retail website is easy! Simply browse through our collection, select the items you love, choose your preferred size and color, and click on the \"Add to Cart\" button. Once you have finished shopping, proceed to the checkout page, provide your shipping and payment information, and confirm your order. Voila! Your order will be on its way to you soon.</p>",
+        "question": "How can I place an order?"
+      },
+      {
+        "answer": "<p>We accept various payment methods to provide convenience to our customers. You can securely pay for your order using major credit cards like Visa, Mastercard, and American Express. We also accept payments through PayPal for added flexibility. Please note that we do not accept cash on delivery or personal checks at the moment.</p>",
+        "question": "What payment methods are accepted?"
+      },
+      {
+        "answer": "<p>We understand the excitement of awaiting your fashion finds, so we offer order tracking to keep you informed. Once your order is shipped, we will send you a confirmation email containing a tracking number and a link to the courier's website. You can click on the link or visit the courier's website directly and enter the tracking number to check the status and whereabouts of your package.</p><p><br></p>",
+        "question": "How can I track my order?"
+      },
+      {
+        "answer": "<p>Absolutely! We want you to be completely satisfied with your purchase. If you change your mind about an item, we offer a hassle-free return and exchange policy. You can initiate a return within 30 days of receiving your order. The item should be in its original condition, unworn, and with all tags attached. Simply contact our customer support team with your order details, and they will guide you through the return or exchange process.</p>",
+        "question": "Can I return or exchange an item?"
+      },
+      {
+        "answer": "<p>Yes, we offer international shipping to many countries around the world. During the checkout process, you can select your country from the list of available destinations. Please note that international shipping fees may apply, and additional customs duties or taxes may be charged by your country's customs authorities. These charges are the responsibility of the customer and are not included in the item price or shipping cost.</p>",
+        "question": "Do you offer international shipping?"
+      }
+    ],
+    "description": "Your Questions Answered",
+    "__resolveType": "deco-sites/technos/sections/Content/Faq.tsx"
+  },
+  "FAQ - 02": {
+    "title": "FAQ",
+    "layout": {
+      "variation": "Full",
+      "headerAlignment": "center"
+    },
+    "questions": [
+      {
+        "answer": "<p>Placing an order on our fashion retail website is easy! Simply browse through our collection, select the items you love, choose your preferred size and color, and click on the \"Add to Cart\" button. Once you have finished shopping, proceed to the checkout page, provide your shipping and payment information, and confirm your order. Voila! Your order will be on its way to you soon.</p>",
+        "question": "How can I place an order?"
+      },
+      {
+        "answer": "<p>We accept various payment methods to provide convenience to our customers. You can securely pay for your order using major credit cards like Visa, Mastercard, and American Express. We also accept payments through PayPal for added flexibility. Please note that we do not accept cash on delivery or personal checks at the moment.</p>",
+        "question": "What payment methods are accepted?"
+      },
+      {
+        "answer": "<p>We understand the excitement of awaiting your fashion finds, so we offer order tracking to keep you informed. Once your order is shipped, we will send you a confirmation email containing a tracking number and a link to the courier's website. You can click on the link or visit the courier's website directly and enter the tracking number to check the status and whereabouts of your package.</p><p><br></p>",
+        "question": "How can I track my order?"
+      },
+      {
+        "answer": "<p>Absolutely! We want you to be completely satisfied with your purchase. If you change your mind about an item, we offer a hassle-free return and exchange policy. You can initiate a return within 30 days of receiving your order. The item should be in its original condition, unworn, and with all tags attached. Simply contact our customer support team with your order details, and they will guide you through the return or exchange process.</p>",
+        "question": "Can I return or exchange an item?"
+      },
+      {
+        "answer": "<p>Yes, we offer international shipping to many countries around the world. During the checkout process, you can select your country from the list of available destinations. Please note that international shipping fees may apply, and additional customs duties or taxes may be charged by your country's customs authorities. These charges are the responsibility of the customer and are not included in the item price or shipping cost.</p>",
+        "question": "Do you offer international shipping?"
+      }
+    ],
+    "description": "Your Questions Answered",
+    "__resolveType": "deco-sites/technos/sections/Content/Faq.tsx"
+  },
+  "FAQ - 03": {
+    "title": "FAQ",
+    "layout": {
+      "variation": "Compact",
+      "headerAlignment": "center"
+    },
+    "contact": {
+      "link": {
+        "href": "Contact us",
+        "text": "Contact us"
+      },
+      "title": "Still have a question?",
+      "description": "<p class=\"ql-align-center\">Reach out now</p>"
+    },
+    "questions": [
+      {
+        "answer": "<p>Placing an order on our fashion retail website is easy! Simply browse through our collection, select the items you love, choose your preferred size and color, and click on the \"Add to Cart\" button. Once you have finished shopping, proceed to the checkout page, provide your shipping and payment information, and confirm your order. Voila! Your order will be on its way to you soon.</p>",
+        "question": "How can I place an order?"
+      },
+      {
+        "answer": "<p>We accept various payment methods to provide convenience to our customers. You can securely pay for your order using major credit cards like Visa, Mastercard, and American Express. We also accept payments through PayPal for added flexibility. Please note that we do not accept cash on delivery or personal checks at the moment.</p>",
+        "question": "What payment methods are accepted?"
+      },
+      {
+        "answer": "<p>Absolutely! We want you to be completely satisfied with your purchase. If you change your mind about an item, we offer a hassle-free return and exchange policy. You can initiate a return within 30 days of receiving your order. The item should be in its original condition, unworn, and with all tags attached. Simply contact our customer support team with your order details, and they will guide you through the return or exchange process.</p>",
+        "question": "Can I return or exchange an item?"
+      },
+      {
+        "answer": "<p>We understand the excitement of awaiting your fashion finds, so we offer order tracking to keep you informed. Once your order is shipped, we will send you a confirmation email containing a tracking number and a link to the courier's website. You can click on the link or visit the courier's website directly and enter the tracking number to check the status and whereabouts of your package.</p><p><br></p>",
+        "question": "How can I track my order?"
+      },
+      {
+        "answer": "<p>Yes, we offer international shipping to many countries around the world. During the checkout process, you can select your country from the list of available destinations. Please note that international shipping fees may apply, and additional customs duties or taxes may be charged by your country's customs authorities. These charges are the responsibility of the customer and are not included in the item price or shipping cost.</p>",
+        "question": "Do you offer international shipping?"
+      }
+    ],
+    "description": "Your Questions Answered",
+    "__resolveType": "deco-sites/technos/sections/Content/Faq.tsx"
+  },
+  "Lemonade": {
+    "fonts": {
+      "fontFamily": "'Albert Sans'"
+    },
+    "mainColors": {
+      "primary": "#519903",
+      "base-100": "#ffffff",
+      "tertiary": "#F7F9CA",
+      "secondary": "#E9E92E"
+    },
+    "buttonStyle": {
+      "--border-btn": "1px",
+      "--rounded-btn": "0.2rem",
+      "--btn-text-case": "normal-case",
+      "--btn-focus-scale": "0.95"
+    },
+    "__resolveType": "deco-sites/technos/sections/Theme/Theme.tsx",
+    "complementaryColors": {
+      "primary": {
+        "primary-content": "#deebd1"
+      },
+      "tertiary": {
+        "tertiary-content": "#2f2f28"
+      },
+      "secondary": {
+        "secondary-content": "#2e2d14"
+      }
+    }
+  },
+  "everyone": {
+    "routes": [
+      {
+        "handler": {
+          "value": {
+            "page": {
+              "__resolveType": "Search Page"
+            },
+            "__resolveType": "$live/handlers/fresh.ts"
+          }
+        },
+        "pathTemplate": "/s"
+      },
+      {
+        "handler": {
+          "value": {
+            "page": {
+              "__resolveType": "Categories"
+            },
+            "__resolveType": "$live/handlers/fresh.ts"
+          }
+        },
+        "pathTemplate": "/*"
+      },
+      {
+        "handler": {
+          "value": {
+            "page": {
+              "__resolveType": "Home"
+            },
+            "__resolveType": "$live/handlers/fresh.ts"
+          }
+        },
+        "pathTemplate": "/"
+      },
+      {
+        "handler": {
+          "value": {
+            "page": {
+              "__resolveType": "Product Page"
+            },
+            "__resolveType": "$live/handlers/fresh.ts"
+          }
+        },
+        "pathTemplate": "/:slug/p"
+      },
+      {
+        "handler": {
+          "value": {
+            "page": {
+              "__resolveType": "pages-institutionalpage-ca2f3c8031d8"
+            },
+            "__resolveType": "$live/handlers/fresh.ts"
+          }
+        },
+        "pathTemplate": "/institucional/text"
+      },
+      {
+        "handler": {
+          "value": {
+            "page": {
+              "__resolveType": "pages-institutionalpage (accordion)-e8b3777c6dac"
+            },
+            "__resolveType": "$live/handlers/fresh.ts"
+          }
+        },
+        "pathTemplate": "/institucional/accordion"
+      },
+      {
+        "handler": {
+          "value": {
+            "page": {
+              "__resolveType": "pages-institutionalpage (cards)-434d5fe5d4f5"
+            },
+            "__resolveType": "$live/handlers/fresh.ts"
+          }
+        },
+        "pathTemplate": "/institucional/cards"
+      },
+      {
+        "handler": {
+          "value": {
+            "page": {
+              "__resolveType": "pages-institutionalpage (contact)-efacfbb1b145"
+            },
+            "__resolveType": "$live/handlers/fresh.ts"
+          }
+        },
+        "pathTemplate": "/institucional/contact"
+      }
+    ],
+    "matcher": {},
+    "overrides": [],
+    "__resolveType": "$live/flags/everyone.ts"
+  },
+  "Halloween": {
+    "fonts": {
+      "fontFamily": "'Courier New'"
+    },
+    "mainColors": {
+      "primary": "#f28c18",
+      "base-100": "#212121",
+      "tertiary": "#51a800",
+      "secondary": "#6d3a9c"
+    },
+    "buttonStyle": {
+      "--border-btn": "3px",
+      "--rounded-btn": "2rem",
+      "--btn-text-case": "uppercase",
+      "--btn-focus-scale": "1.05"
+    },
+    "__resolveType": "deco-sites/technos/sections/Theme/Theme.tsx"
+  },
+  "Workflows": {
+    "__resolveType": "decohub/apps/workflows.ts"
+  },
+  "analytics": {
+    "trackingIds": [
+      "GTM-KVXHNCM"
+    ],
+    "__resolveType": "deco-sites/std/sections/Analytics.tsx"
+  },
+  "configOCC": {
+    "__resolveType": "deco-sites/std/accounts/occ.ts"
+  },
+  "plausible": {
+    "__resolveType": "decohub/apps/analytics.ts"
+  },
+  "typesense": {
+    "apiKey": "90b213e1-5b08-4cab-9979-52ff92bc3302",
+    "apiUrls": [
+      "https://dry-pond-5415.fly.dev/"
+    ],
+    "__resolveType": "decohub/apps/typesense.ts"
+  },
+  "Categories": {
+    "name": "Categories",
+    "path": "/*",
+    "sections": [
+      {
+        "__resolveType": "Default - Design System"
+      },
+      {
+        "page": {
+          "sort": "price:desc",
+          "count": 1,
+          "fuzzy": "automatic",
+          "__resolveType": "deco-sites/std/loaders/vtex/intelligentSearch/productListingPage.ts",
+          "selectedFacets": []
+        },
+        "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1692/b7f2559f-9058-48dd-832f-699820df1f84",
+        "__resolveType": "deco-sites/std/sections/SEOPLP.tsx",
+        "titleTemplate": "%s | Agência N1"
+      },
+      {
+        "__resolveType": "Header Global"
+      },
+      {
+        "__resolveType": "categoryBreadcrumb"
+      },
+      {
+        "banners": [
+          {
+            "text": {
+              "title": "Tênis",
+              "mobileTextPosition": "left",
+              "desktopTextPosition": "left"
+            },
+            "image": {
+              "alt": "Teste",
+              "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1692/408f5e0e-3b5e-4312-b784-954bff51cd4a",
+              "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1692/d53a0b85-424e-46b0-a5fc-9d8190aa9dd8"
+            },
+            "title": "Tênis",
+            "matcher": "/departamento-1"
+          }
+        ],
+        "__resolveType": "deco-sites/technos/sections/Category/CategoryBanner.tsx"
+      },
+      {
+        "__resolveType": "SearchResults Global"
+      },
+      {
+        "categories": [
+          {
+            "html": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>",
+            "page": {
+              "sort": "price:desc",
+              "count": 1,
+              "fuzzy": "automatic",
+              "__resolveType": "deco-sites/std/loaders/vtex/intelligentSearch/productListingPage.ts",
+              "selectedFacets": []
+            },
+            "matcher": "/departamento-1/categoria-2",
+            "textAlign": "Center"
+          },
+          {
+            "html": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>",
+            "page": {
+              "sort": "price:desc",
+              "count": 1,
+              "fuzzy": "automatic",
+              "query": "1",
+              "__resolveType": "deco-sites/std/loaders/vtex/intelligentSearch/productListingPage.ts",
+              "selectedFacets": []
+            },
+            "matcher": "/departamento-1",
+            "textAlign": "Center"
+          }
+        ],
+        "__resolveType": "deco-sites/technos/sections/Category/CategoryText.tsx",
+        "textCategories": [
+          {
+            "page": {
+              "sort": "price:desc",
+              "count": 1,
+              "fuzzy": "automatic",
+              "query": "1",
+              "__resolveType": "deco-sites/std/loaders/vtex/intelligentSearch/productListingPage.ts",
+              "selectedFacets": []
+            },
+            "text": {
+              "text": "Lorem ipsum dolor sit amet",
+              "title": "Lorem"
+            },
+            "matcher": "/departamento-1",
+            "categoryInfo": {
+              "textInfo": {
+                "html": "<p><strong style=\"background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);\">Lorem Ipsum</strong><span style=\"background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);\">&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span></p>",
+                "title": "Lorem",
+                "caption": "Impsum",
+                "textAlign": "Center"
+              }
+            },
+            "infoCategory": {
+              "textInfo": {
+                "html": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>",
+                "title": "Lorem",
+                "caption": "Teste"
+              }
+            },
+            "itemListElement": {
+              "url": "1",
+              "numberOfItems": 1,
+              "itemListElement": [
+                {
+                  "item": "1",
+                  "@type": "ListItem",
+                  "image": [],
+                  "position": 1
+                }
+              ]
+            }
+          },
+          {
+            "page": {
+              "sort": "price:desc",
+              "count": 1,
+              "fuzzy": "automatic",
+              "pageOffset": 1,
+              "__resolveType": "deco-sites/std/loaders/vtex/intelligentSearch/productListingPage.ts",
+              "selectedFacets": []
+            },
+            "matcher": "/departamento-1/categoria-2",
+            "infoCategory": {
+              "textInfo": {
+                "links": [],
+                "title": "teste",
+                "caption": "dsffsdf",
+                "textAlign": "Left"
+              }
+            },
+            "itemListElement": {
+              "numberOfItems": 1,
+              "itemListElement": [
+                {
+                  "item": "1",
+                  "@type": "ListItem",
+                  "image": [],
+                  "position": 1
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "__resolveType": "Footer Global"
+      }
+    ],
+    "__resolveType": "$live/pages/LivePage.tsx"
+  },
+  "Intro Deco": {
+    "links": [
+      {
+        "href": "https://twitter.com/decocx_commerce",
+        "title": "Twitter"
+      },
+      {
+        "href": "https://www.linkedin.com/company/deco-cx/?originalSubdomain=br",
+        "title": "LinkedIn"
+      },
+      {
+        "href": "http://github.com/deco-cx",
+        "title": "Github"
+      }
+    ],
+    "picture": "https://media.licdn.com/dms/image/D4D0BAQHBdzRnagoSUg/company-logo_200_200/0/1682012307830?e=2147483647&v=beta&t=rA3XxMn_rYI2MZTJS3FoLUodnOKCSTowLjK46tW58uM",
+    "headline": "deco.cx",
+    "introduction": "<p><a href=\"deco.cx\" target=\"_blank\">deco.cx</a> is the best way for you to build your site</p>",
+    "__resolveType": "deco-sites/technos/sections/Intro.tsx"
+  },
+  "Logos - 01": {
+    "title": "Our Partners",
+    "images": [
+      {
+        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/d00893c6-3074-418f-b36d-28ad45fffaad",
+        "altText": "test"
+      },
+      {
+        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/52aff497-3311-4fca-a470-5e8b8a19c54b",
+        "altText": "test"
+      },
+      {
+        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/c970b103-9ad4-43c0-b5bd-93e4f84de82b",
+        "altText": "/"
+      },
+      {
+        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/f01c7ebf-07bb-4ae6-a2df-a6e302996d5c",
+        "altText": "/"
+      },
+      {
+        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/d45c6c35-4db1-4665-af19-18b54ee8d808",
+        "altText": "/"
+      },
+      {
+        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/62e1174b-c04f-48ef-aa3c-1b531ae2a2d8",
+        "altText": "/"
+      },
+      {
+        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/168815f2-fc66-422f-8f5f-86af1e787fc3",
+        "altText": "/"
+      },
+      {
+        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/942eb0da-d408-4477-ba59-b089119138af",
+        "altText": "/"
+      },
+      {
+        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/5851e5e4-b986-4958-b8d6-12eb620ab575",
+        "altText": "/"
+      },
+      {
+        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/74e4fe58-93e3-42c0-ba97-92626bc3d412",
+        "altText": "/"
+      },
+      {
+        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/62805daf-19bc-4800-93c8-2c06a5859c1f",
+        "altText": "/"
+      },
+      {
+        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/1ef3c4e3-e024-42cf-8798-02bfdc48102a",
+        "altText": "/"
+      }
+    ],
+    "layout": {
+      "headerAlignment": "center"
+    },
+    "description": "Take a look at our Partner Agencies",
+    "__resolveType": "deco-sites/technos/sections/Content/Logos.tsx"
+  },
+  "Logos - 02": {
+    "title": "Our Partners",
+    "images": [
+      {
+        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/d00893c6-3074-418f-b36d-28ad45fffaad",
+        "altText": "test"
+      },
+      {
+        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/52aff497-3311-4fca-a470-5e8b8a19c54b",
+        "altText": "test"
+      },
+      {
+        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/c970b103-9ad4-43c0-b5bd-93e4f84de82b",
+        "altText": "a"
+      },
+      {
+        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/f01c7ebf-07bb-4ae6-a2df-a6e302996d5c",
+        "altText": "a"
+      },
+      {
+        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/d45c6c35-4db1-4665-af19-18b54ee8d808",
+        "altText": "a"
+      },
+      {
+        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/62e1174b-c04f-48ef-aa3c-1b531ae2a2d8",
+        "altText": "a"
+      },
+      {
+        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/168815f2-fc66-422f-8f5f-86af1e787fc3",
+        "altText": "a"
+      },
+      {
+        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/942eb0da-d408-4477-ba59-b089119138af",
+        "altText": "a"
+      },
+      {
+        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/5851e5e4-b986-4958-b8d6-12eb620ab575",
+        "altText": "a"
+      },
+      {
+        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/74e4fe58-93e3-42c0-ba97-92626bc3d412",
+        "altText": "a"
+      },
+      {
+        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/62805daf-19bc-4800-93c8-2c06a5859c1f",
+        "altText": "a"
+      },
+      {
+        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/1ef3c4e3-e024-42cf-8798-02bfdc48102a",
+        "altText": "a"
+      }
+    ],
+    "layout": {
+      "headerAlignment": "left"
+    },
+    "description": "Take a look at our Partner Agencies",
+    "__resolveType": "deco-sites/technos/sections/Content/Logos.tsx"
+  },
+  "PDP Loader": {
+    "data": {
+      "slug": {
+        "param": "slug",
+        "__resolveType": "website/functions/requestToParam.ts"
+      },
+      "__resolveType": "vtex/loaders/intelligentSearch/productDetailsPage.ts"
+    },
+    "extensions": [
+      {
+        "__resolveType": "vtex/loaders/product/extensions/detailsPage.ts"
+      }
+    ],
+    "__resolveType": "commerce/loaders/product/extensions/detailsPage.ts"
+  },
+  "PLP Loader": {
+    "data": {
+      "sort": "price:desc",
+      "count": 12,
+      "fuzzy": "automatic",
+      "pageOffset": 1,
+      "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+      "selectedFacets": []
+    },
+    "extensions": [
+      {
+        "__resolveType": "vtex/loaders/product/extensions/listingPage.ts"
+      }
+    ],
+    "__resolveType": "commerce/loaders/product/extensions/listingPage.ts"
+  },
+  "SEODefault": {
+    "type": "website",
+    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/b8f3b3df-31e3-4d15-b8a7-15f40c252f66",
+    "title": "Fashion by deco.cx",
+    "description": "Lightning fast stores. Available now - deco.cx",
+    "__resolveType": "deco-sites/std/sections/SEO.tsx",
+    "titleTemplate": "%s | Fashion by deco.cx"
+  },
+  "Teste Muri": {
+    "ids": [],
+    "collection": "a",
+    "__resolveType": "deco-sites/std/loaders/vtex/intelligentSearch/productList.ts"
+  },
+  "configVNDA": {
+    "__resolveType": "deco-sites/std/accounts/vnda.ts"
+  },
+  "configVTEX": {
+    "account": "bravtexfashionstore",
+    "publicUrl": "fashion.bravtexstores.com.br",
+    "__resolveType": "deco-sites/std/accounts/vtex.ts",
+    "defaultLocale": "pt-BR",
+    "defaultSalesChannel": "1",
+    "defaultPriceCurrency": "BRL",
+    "defaultHideUnnavailableItems": false
+  },
+  "vestidos-4": {
+    "count": 4,
+    "query": "vestidos",
+    "collection": [],
+    "__resolveType": "deco-sites/std/functions/vtexProductList.ts"
+  },
+  "vtex-olive": {
+    "count": 4,
+    "query": "olive",
+    "collection": [],
+    "__resolveType": "deco-sites/std/functions/vtexProductList.ts"
+  },
+  "vtex_proxy": {
+    "name": "vtex_proxy",
+    "routes": {
+      "host": "fashion.deco.site",
+      "__resolveType": "deco-sites/std/loaders/vtex/proxy.ts"
+    },
+    "matcher": {
+      "__resolveType": "$live/matchers/MatchAlways.ts"
+    },
+    "overrides": [],
+    "__resolveType": "$live/flags/audience.ts"
+  },
+  "Footer - 01": {
+    "logo": {
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/79a5eab5-4a2c-4bf5-a424-ff6f141a430c",
+      "description": "O estilo pensado para você"
+    },
+    "layout": {
+      "hide": {
+        "logo": false,
+        "mobileApps": false,
+        "newsletter": false,
+        "socialLinks": false,
+        "regionOptions": false
+      },
+      "variation": "Variation 1",
+      "backgroundColor": "Primary"
+    },
+    "social": {
+      "items": [
+        {
+          "link": "http://deco.cx/",
+          "label": "Discord"
+        },
+        {
+          "link": "http://deco.cx/",
+          "label": "Facebook"
+        },
+        {
+          "link": "http://deco.cx/",
+          "label": "Instagram"
+        },
+        {
+          "link": "http://deco.cx/",
+          "label": "Linkedin"
+        },
+        {
+          "link": "http://deco.cx/",
+          "label": "Tiktok"
+        },
+        {
+          "link": "http://deco.cx/",
+          "label": "Twitter"
+        }
+      ],
+      "title": "Siga-nos nas redes"
+    },
+    "payments": {
+      "items": [
+        {
+          "label": "Elo"
+        },
+        {
+          "label": "Mastercard"
+        },
+        {
+          "label": "Pix"
+        },
+        {
+          "label": "Visa"
+        }
+      ],
+      "title": "Formas de pagamento"
+    },
+    "sections": [
+      {
+        "items": [
+          {
+            "href": "/quem-somos",
+            "label": "Quem somos"
+          },
+          {
+            "href": "/privacidade",
+            "label": "Privacidade e segurança"
+          },
+          {
+            "href": "/termos-de-uso",
+            "label": "Termos de uso"
+          },
+          {
+            "href": "/trabalhe-conosco",
+            "label": "Trabalhe conosco"
+          }
+        ],
+        "label": "Sobre",
+        "children": [
+          {
+            "href": "/quemsomos",
+            "label": "Quem somos"
+          },
+          {
+            "href": "/privacidadeeseguranca",
+            "label": "Privacidade e segurança"
+          },
+          {
+            "href": "/termosdeuso",
+            "label": "Termos de uso"
+          },
+          {
+            "href": "/trabalheconosco",
+            "label": "Trabalhe conosco"
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "href": "/central-de-atendimento",
+            "label": "Central de atendimento"
+          },
+          {
+            "href": "/fale-whatsapp",
+            "label": "Fale conosco pelo Whatsapp"
+          },
+          {
+            "href": "/troca-e-devolucao",
+            "label": "Troca e devolução"
+          }
+        ],
+        "label": "Atendimento",
+        "children": [
+          {
+            "href": "/centraldeatendimento",
+            "label": "Central de atendimento"
+          },
+          {
+            "href": "/whatsapp",
+            "label": "Fale conosco pelo WhatsApp"
+          },
+          {
+            "href": "/trocaedevolucao",
+            "label": "Troca e devolução"
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "href": "/login",
+            "label": "Login e cadastro"
+          },
+          {
+            "href": "/meus-pedidos",
+            "label": "Meus pedidos"
+          }
+        ],
+        "label": "Minha conta",
+        "children": [
+          {
+            "href": "/loginecadastro",
+            "label": "Login e cadastro"
+          },
+          {
+            "href": "/meuspedidos",
+            "label": "Meus pedidos"
+          }
+        ]
+      }
+    ],
+    "extraLinks": [
+      {
+        "href": "http://www.google.com",
+        "link": "http://www.google.com/",
+        "label": "Política de privacidade"
+      },
+      {
+        "href": "http://www.google.com",
+        "link": "http://www.google.com",
+        "label": "Termos de serviço"
+      }
+    ],
+    "mobileApps": {
+      "apple": "http://www.google.com",
+      "android": "http://www.google.com"
+    },
+    "newsletter": {
+      "form": {
+        "helpText": "<p>Ao se inscrever, você está aceitando nossa <a href=\"/\" class=\"link\">Política de Privacidade</a>.</p>"
+      },
+      "title": "Assine nossa newsletter",
+      "description": "Participe e ganhe 10% de desconto na primeira compra"
+    },
+    "backToTheTop": {
+      "text": "Voltar ao topo"
+    },
+    "__resolveType": "deco-sites/technos/sections/Footer/Footer.tsx",
+    "regionOptions": {
+      "currency": [
+        {
+          "href": "/",
+          "label": "Brasil BRL"
+        },
+        {
+          "href": "/",
+          "label": "United Stated USD"
+        }
+      ],
+      "language": [
+        {
+          "href": "/",
+          "label": "PT"
+        },
+        {
+          "href": "/",
+          "label": "EN"
+        }
+      ]
+    }
+  },
+  "Footer - 02": {
+    "logo": {
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/79a5eab5-4a2c-4bf5-a424-ff6f141a430c",
+      "description": "O estilo pensado para você"
+    },
+    "layout": {
+      "hide": {
+        "logo": false,
+        "mobileApps": false,
+        "newsletter": false,
+        "socialLinks": false,
+        "regionOptions": false
+      },
+      "variation": "Variation 2",
+      "backgroundColor": "Secondary"
+    },
+    "social": {
+      "items": [
+        {
+          "link": "http://deco.cx/",
+          "label": "Discord"
+        },
+        {
+          "link": "http://deco.cx/",
+          "label": "Facebook"
+        },
+        {
+          "link": "http://deco.cx/",
+          "label": "Instagram"
+        },
+        {
+          "link": "http://deco.cx/",
+          "label": "Linkedin"
+        },
+        {
+          "link": "http://deco.cx/",
+          "label": "Tiktok"
+        },
+        {
+          "link": "http://deco.cx/",
+          "label": "Twitter"
+        }
+      ],
+      "title": "Siga-nos nas redes"
+    },
+    "payments": {
+      "items": [
+        {
+          "label": "Elo"
+        },
+        {
+          "label": "Mastercard"
+        },
+        {
+          "label": "Pix"
+        },
+        {
+          "label": "Visa"
+        }
+      ],
+      "title": "Formas de pagamento"
+    },
+    "sections": [
+      {
+        "items": [
+          {
+            "href": "/quem-somos",
+            "label": "Quem somos"
+          },
+          {
+            "href": "/privacidade",
+            "label": "Privacidade e segurança"
+          },
+          {
+            "href": "/termos-de-uso",
+            "label": "Termos de uso"
+          },
+          {
+            "href": "/trabalhe-conosco",
+            "label": "Trabalhe conosco"
+          }
+        ],
+        "label": "Sobre",
+        "children": [
+          {
+            "href": "/quemsomos",
+            "label": "Quem somos"
+          },
+          {
+            "href": "/privacidadeeseguranca",
+            "label": "Privacidade e segurança"
+          },
+          {
+            "href": "/termosdeuso",
+            "label": "Termos de uso"
+          },
+          {
+            "href": "/trabalheconosco",
+            "label": "Trabalhe conosco"
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "href": "/central-de-atendimento",
+            "label": "Central de atendimento"
+          },
+          {
+            "href": "/fale-whatsapp",
+            "label": "Fale conosco pelo Whatsapp"
+          },
+          {
+            "href": "/troca-e-devolucao",
+            "label": "Troca e devolução"
+          }
+        ],
+        "label": "Atendimento",
+        "children": [
+          {
+            "href": "/centraldeatendimento",
+            "label": "Central de atendimento"
+          },
+          {
+            "href": "/whatsapp",
+            "label": "Fale conosco pelo WhatsApp"
+          },
+          {
+            "href": "/trocaedevolucao",
+            "label": "Troca e devolução"
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "href": "/login",
+            "label": "Login e cadastro"
+          },
+          {
+            "href": "/meus-pedidos",
+            "label": "Meus pedidos"
+          }
+        ],
+        "label": "Minha conta",
+        "children": [
+          {
+            "href": "/loginecadastro",
+            "label": "Login e cadastro"
+          },
+          {
+            "href": "/meuspedidos",
+            "label": "Meus pedidos"
+          }
+        ]
+      }
+    ],
+    "extraLinks": [
+      {
+        "href": "http://www.google.com",
+        "link": "http://www.google.com/",
+        "label": "Política de privacidade"
+      },
+      {
+        "href": "http://www.google.com",
+        "link": "http://www.google.com",
+        "label": "Termos de serviço"
+      }
+    ],
+    "mobileApps": {
+      "apple": "http://www.google.com",
+      "android": "http://www.google.com"
+    },
+    "newsletter": {
+      "form": {
+        "helpText": "<p>Ao se inscrever, você está aceitando nossa <a href=\"/\" class=\"link\">Política de Privacidade</a>.</p>"
+      },
+      "title": "Assine nossa newsletter",
+      "description": "Participe e ganhe 10% de desconto na primeira compra"
+    },
+    "backToTheTop": {
+      "text": "Voltar ao topo"
+    },
+    "__resolveType": "deco-sites/technos/sections/Footer/Footer.tsx",
+    "regionOptions": {
+      "currency": [
+        {
+          "href": "/",
+          "label": "Brasil BRL"
+        },
+        {
+          "href": "/",
+          "label": "United Stated USD"
+        }
+      ],
+      "language": [
+        {
+          "href": "/",
+          "label": "PT"
+        },
+        {
+          "href": "/",
+          "label": "EN"
+        }
+      ]
+    }
+  },
+  "Footer - 03": {
+    "logo": {
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/79a5eab5-4a2c-4bf5-a424-ff6f141a430c",
+      "description": "O estilo pensado para você"
+    },
+    "layout": {
+      "hide": {
+        "logo": false,
+        "mobileApps": false,
+        "newsletter": false,
+        "socialLinks": false,
+        "regionOptions": false
+      },
+      "variation": "Variation 3",
+      "backgroundColor": "Accent"
+    },
+    "social": {
+      "items": [
+        {
+          "link": "http://deco.cx/",
+          "label": "Discord"
+        },
+        {
+          "link": "http://deco.cx/",
+          "label": "Facebook"
+        },
+        {
+          "link": "http://deco.cx/",
+          "label": "Instagram"
+        },
+        {
+          "link": "http://deco.cx/",
+          "label": "Linkedin"
+        },
+        {
+          "link": "http://deco.cx/",
+          "label": "Tiktok"
+        },
+        {
+          "link": "http://deco.cx/",
+          "label": "Twitter"
+        }
+      ],
+      "title": "Siga-nos nas redes"
+    },
+    "payments": {
+      "items": [
+        {
+          "label": "Elo"
+        },
+        {
+          "label": "Mastercard"
+        },
+        {
+          "label": "Pix"
+        },
+        {
+          "label": "Visa"
+        }
+      ],
+      "title": "Formas de pagamento"
+    },
+    "sections": [
+      {
+        "items": [
+          {
+            "href": "/quem-somos",
+            "label": "Quem somos"
+          },
+          {
+            "href": "/privacidade",
+            "label": "Privacidade e segurança"
+          },
+          {
+            "href": "/termos-de-uso",
+            "label": "Termos de uso"
+          },
+          {
+            "href": "/trabalhe-conosco",
+            "label": "Trabalhe conosco"
+          }
+        ],
+        "label": "Sobre",
+        "children": [
+          {
+            "href": "/quemsomos",
+            "label": "Quem somos"
+          },
+          {
+            "href": "/privacidadeeseguranca",
+            "label": "Privacidade e segurança"
+          },
+          {
+            "href": "/termosdeuso",
+            "label": "Termos de uso"
+          },
+          {
+            "href": "/trabalheconosco",
+            "label": "Trabalhe conosco"
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "href": "/central-de-atendimento",
+            "label": "Central de atendimento"
+          },
+          {
+            "href": "/fale-whatsapp",
+            "label": "Fale conosco pelo Whatsapp"
+          },
+          {
+            "href": "/troca-e-devolucao",
+            "label": "Troca e devolução"
+          }
+        ],
+        "label": "Atendimento",
+        "children": [
+          {
+            "href": "/centraldeatendimento",
+            "label": "Central de atendimento"
+          },
+          {
+            "href": "/whatsapp",
+            "label": "Fale conosco pelo WhatsApp"
+          },
+          {
+            "href": "/trocaedevolucao",
+            "label": "Troca e devolução"
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "href": "/login",
+            "label": "Login e cadastro"
+          },
+          {
+            "href": "/meus-pedidos",
+            "label": "Meus pedidos"
+          }
+        ],
+        "label": "Minha conta",
+        "children": [
+          {
+            "href": "/loginecadastro",
+            "label": "Login e cadastro"
+          },
+          {
+            "href": "/meuspedidos",
+            "label": "Meus pedidos"
+          }
+        ]
+      }
+    ],
+    "extraLinks": [
+      {
+        "href": "http://www.google.com",
+        "link": "http://www.google.com/",
+        "label": "Política de privacidade"
+      },
+      {
+        "href": "http://www.google.com",
+        "link": "http://www.google.com",
+        "label": "Termos de serviço"
+      }
+    ],
+    "mobileApps": {
+      "apple": "http://www.google.com",
+      "android": "http://www.google.com"
+    },
+    "newsletter": {
+      "form": {
+        "helpText": "<p>Ao se inscrever, você está aceitando nossa <a href=\"/\" class=\"link\">Política de Privacidade</a>.</p>"
+      },
+      "title": "Assine nossa newsletter",
+      "description": "Participe e ganhe 10% de desconto na primeira compra"
+    },
+    "backToTheTop": {
+      "text": "Voltar ao topo"
+    },
+    "__resolveType": "deco-sites/technos/sections/Footer/Footer.tsx",
+    "regionOptions": {
+      "currency": [
+        {
+          "href": "/",
+          "label": "Brasil BRL"
+        },
+        {
+          "href": "/",
+          "label": "United Stated USD"
+        }
+      ],
+      "language": [
+        {
+          "href": "/",
+          "label": "PT"
+        },
+        {
+          "href": "/",
+          "label": "EN"
+        }
+      ]
+    }
+  },
+  "Footer - 04": {
+    "logo": {
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/79a5eab5-4a2c-4bf5-a424-ff6f141a430c",
+      "description": "O estilo pensado para você"
+    },
+    "layout": {
+      "hide": {
+        "logo": false,
+        "mobileApps": false,
+        "newsletter": false,
+        "socialLinks": false,
+        "regionOptions": false
+      },
+      "variation": "Variation 4",
+      "backgroundColor": "Base 100"
+    },
+    "social": {
+      "items": [
+        {
+          "link": "http://deco.cx/",
+          "label": "Discord"
+        },
+        {
+          "link": "http://deco.cx/",
+          "label": "Facebook"
+        },
+        {
+          "link": "http://deco.cx/",
+          "label": "Instagram"
+        },
+        {
+          "link": "http://deco.cx/",
+          "label": "Linkedin"
+        },
+        {
+          "link": "http://deco.cx/",
+          "label": "Tiktok"
+        },
+        {
+          "link": "http://deco.cx/",
+          "label": "Twitter"
+        }
+      ],
+      "title": "Siga-nos nas redes"
+    },
+    "payments": {
+      "items": [
+        {
+          "label": "Elo"
+        },
+        {
+          "label": "Mastercard"
+        },
+        {
+          "label": "Pix"
+        },
+        {
+          "label": "Visa"
+        }
+      ],
+      "title": "Formas de pagamento"
+    },
+    "sections": [
+      {
+        "items": [
+          {
+            "href": "/quem-somos",
+            "label": "Quem somos"
+          },
+          {
+            "href": "/privacidade",
+            "label": "Privacidade e segurança"
+          },
+          {
+            "href": "/termos-de-uso",
+            "label": "Termos de uso"
+          },
+          {
+            "href": "/trabalhe-conosco",
+            "label": "Trabalhe conosco"
+          }
+        ],
+        "label": "Sobre",
+        "children": [
+          {
+            "href": "/quemsomos",
+            "label": "Quem somos"
+          },
+          {
+            "href": "/privacidadeeseguranca",
+            "label": "Privacidade e segurança"
+          },
+          {
+            "href": "/termosdeuso",
+            "label": "Termos de uso"
+          },
+          {
+            "href": "/trabalheconosco",
+            "label": "Trabalhe conosco"
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "href": "/central-de-atendimento",
+            "label": "Central de atendimento"
+          },
+          {
+            "href": "/fale-whatsapp",
+            "label": "Fale conosco pelo Whatsapp"
+          },
+          {
+            "href": "/troca-e-devolucao",
+            "label": "Troca e devolução"
+          }
+        ],
+        "label": "Atendimento",
+        "children": [
+          {
+            "href": "/centraldeatendimento",
+            "label": "Central de atendimento"
+          },
+          {
+            "href": "/whatsapp",
+            "label": "Fale conosco pelo WhatsApp"
+          },
+          {
+            "href": "/trocaedevolucao",
+            "label": "Troca e devolução"
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "href": "/login",
+            "label": "Login e cadastro"
+          },
+          {
+            "href": "/meus-pedidos",
+            "label": "Meus pedidos"
+          }
+        ],
+        "label": "Minha conta",
+        "children": [
+          {
+            "href": "/loginecadastro",
+            "label": "Login e cadastro"
+          },
+          {
+            "href": "/meuspedidos",
+            "label": "Meus pedidos"
+          }
+        ]
+      }
+    ],
+    "extraLinks": [
+      {
+        "href": "http://www.google.com",
+        "link": "http://www.google.com/",
+        "label": "Política de privacidade"
+      },
+      {
+        "href": "http://www.google.com",
+        "link": "http://www.google.com",
+        "label": "Termos de serviço"
+      }
+    ],
+    "mobileApps": {
+      "apple": "http://www.google.com",
+      "android": "http://www.google.com"
+    },
+    "newsletter": {
+      "form": {
+        "helpText": "<p>Ao se inscrever, você está aceitando nossa <a href=\"/\" class=\"link\">Política de Privacidade</a>.</p>"
+      },
+      "title": "Assine nossa newsletter",
+      "description": "Participe e ganhe 10% de desconto na primeira compra"
+    },
+    "backToTheTop": {
+      "text": "Voltar ao topo"
+    },
+    "__resolveType": "deco-sites/technos/sections/Footer/Footer.tsx",
+    "regionOptions": {
+      "currency": [
+        {
+          "href": "/",
+          "label": "Brasil BRL"
+        },
+        {
+          "href": "/",
+          "label": "United Stated USD"
+        }
+      ],
+      "language": [
+        {
+          "href": "/",
+          "label": "PT"
+        },
+        {
+          "href": "/",
+          "label": "EN"
+        }
+      ]
+    }
+  },
+  "Footer - 05": {
+    "logo": {
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/79a5eab5-4a2c-4bf5-a424-ff6f141a430c",
+      "description": "O estilo pensado para você"
+    },
+    "layout": {
+      "hide": {
+        "logo": false,
+        "mobileApps": false,
+        "newsletter": false,
+        "socialLinks": false,
+        "regionOptions": false
+      },
+      "variation": "Variation 5",
+      "backgroundColor": "Primary"
+    },
+    "social": {
+      "items": [
+        {
+          "link": "http://deco.cx/",
+          "label": "Discord"
+        },
+        {
+          "link": "http://deco.cx/",
+          "label": "Facebook"
+        },
+        {
+          "link": "http://deco.cx/",
+          "label": "Instagram"
+        },
+        {
+          "link": "http://deco.cx/",
+          "label": "Linkedin"
+        },
+        {
+          "link": "http://deco.cx/",
+          "label": "Tiktok"
+        },
+        {
+          "link": "http://deco.cx/",
+          "label": "Twitter"
+        }
+      ],
+      "title": "Siga-nos nas redes"
+    },
+    "payments": {
+      "items": [
+        {
+          "label": "Elo"
+        },
+        {
+          "label": "Mastercard"
+        },
+        {
+          "label": "Pix"
+        },
+        {
+          "label": "Visa"
+        }
+      ],
+      "title": "Formas de pagamento"
+    },
+    "sections": [
+      {
+        "items": [
+          {
+            "href": "/quem-somos",
+            "label": "Quem somos"
+          },
+          {
+            "href": "/privacidade",
+            "label": "Privacidade e segurança"
+          },
+          {
+            "href": "/termos-de-uso",
+            "label": "Termos de uso"
+          },
+          {
+            "href": "/trabalhe-conosco",
+            "label": "Trabalhe conosco"
+          }
+        ],
+        "label": "Sobre",
+        "children": [
+          {
+            "href": "/quemsomos",
+            "label": "Quem somos"
+          },
+          {
+            "href": "/privacidadeeseguranca",
+            "label": "Privacidade e segurança"
+          },
+          {
+            "href": "/termosdeuso",
+            "label": "Termos de uso"
+          },
+          {
+            "href": "/trabalheconosco",
+            "label": "Trabalhe conosco"
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "href": "/central-de-atendimento",
+            "label": "Central de atendimento"
+          },
+          {
+            "href": "/fale-whatsapp",
+            "label": "Fale conosco pelo Whatsapp"
+          },
+          {
+            "href": "/troca-e-devolucao",
+            "label": "Troca e devolução"
+          }
+        ],
+        "label": "Atendimento",
+        "children": [
+          {
+            "href": "/centraldeatendimento",
+            "label": "Central de atendimento"
+          },
+          {
+            "href": "/whatsapp",
+            "label": "Fale conosco pelo WhatsApp"
+          },
+          {
+            "href": "/trocaedevolucao",
+            "label": "Troca e devolução"
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "href": "/login",
+            "label": "Login e cadastro"
+          },
+          {
+            "href": "/meus-pedidos",
+            "label": "Meus pedidos"
+          }
+        ],
+        "label": "Minha conta",
+        "children": [
+          {
+            "href": "/loginecadastro",
+            "label": "Login e cadastro"
+          },
+          {
+            "href": "/meuspedidos",
+            "label": "Meus pedidos"
+          }
+        ]
+      }
+    ],
+    "extraLinks": [
+      {
+        "href": "http://www.google.com",
+        "link": "http://www.google.com/",
+        "label": "Política de privacidade"
+      },
+      {
+        "href": "http://www.google.com",
+        "link": "http://www.google.com",
+        "label": "Termos de serviço"
+      }
+    ],
+    "mobileApps": {
+      "apple": "http://www.google.com",
+      "android": "http://www.google.com"
+    },
+    "newsletter": {
+      "form": {
+        "helpText": "<p>Ao se inscrever, você está aceitando nossa <a href=\"/\" class=\"link\">Política de Privacidade</a>.</p>"
+      },
+      "title": "Assine nossa newsletter",
+      "description": "Participe e ganhe 10% de desconto na primeira compra"
+    },
+    "backToTheTop": {
+      "text": "Voltar ao topo"
+    },
+    "__resolveType": "deco-sites/technos/sections/Footer/Footer.tsx",
+    "regionOptions": {
+      "currency": [
+        {
+          "href": "/",
+          "label": "Brasil BRL"
+        },
+        {
+          "href": "/",
+          "label": "United Stated USD"
+        }
+      ],
+      "language": [
+        {
+          "href": "/",
+          "label": "PT"
+        },
+        {
+          "href": "/",
+          "label": "EN"
+        }
+      ]
+    }
+  },
+  "Header - 01": {
+    "cart": {
+      "freeShippingObjectiveQuantity": 600
+    },
+    "logo": {
+      "alt": "Fashion logo by deco",
+      "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/50f36c94-fb4a-4a46-aaec-ebddf61c563c"
+    },
+    "alerts": [
+      "Use this template to create your store at deco.cx"
+    ],
+    "navItems": {
+      "__resolveType": "navbar"
+    },
+    "products": [],
+    "searchbar": {
+      "name": "q",
+      "action": "/s",
+      "loader": {
+        "data": {
+          "count": 4,
+          "highlight": true,
+          "__resolveType": "algolia/loaders/product/suggestions.ts"
+        },
+        "__resolveType": "resolved"
+      },
+      "placeholder": "What are you looking for?"
+    },
+    "suggestions": {
+      "products": [],
+      "searches": []
+    },
+    "__resolveType": "deco-sites/technos/sections/Header/Header.tsx"
+  },
+  "SEO Default": {
+    "type": "website",
+    "image": "https://www.deco.cx/decocx-meta-en.png",
+    "title": "Start by deco.cx",
+    "description": "This is a site template for deco.cx",
+    "__resolveType": "deco-sites/std/sections/SEO.tsx",
+    "titleTemplate": "%s | Start by deco.cx"
+  },
+  "Search Page": {
+    "name": "Search page",
+    "path": "/s",
+    "sections": [
+      {
+        "__resolveType": "Default - Design System"
+      },
+      {
+        "page": {
+          "sort": "",
+          "count": 1,
+          "fuzzy": "automatic",
+          "__resolveType": "deco-sites/std/loaders/vtex/intelligentSearch/productListingPage.ts",
+          "selectedFacets": []
+        },
+        "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1692/7fa299aa-0f8d-4e74-8021-fdf75a8271b1",
+        "__resolveType": "deco-sites/std/sections/SEOPLP.tsx",
+        "titleTemplate": "%s | Agência N1"
+      },
+      {
+        "__resolveType": "Header Global"
+      },
+      {
+        "__resolveType": "categoryBreadcrumb"
+      },
+      {
+        "__resolveType": "SearchResults Global"
+      },
+      {
+        "__resolveType": "Footer Global"
+      }
+    ],
+    "__resolveType": "$live/pages/LivePage.tsx"
+  },
+  "Algolia Raiz": {
+    "adminAPIKey": "72d4757e3b28da7e2b18ca1c8b96a4e3",
+    "searchAPIKey": "f48360f6586a1c440d91fcc3af63db56",
+    "__resolveType": "deco-sites/technos/apps/algolia-raiz.ts",
+    "applicationId": "ETUYHD7AX5"
+  },
+  "Notification": {
+    "product": {
+      "0": {
+        "__resolveType": "algolia/workflows/index/product.ts"
+      },
+      "data": [
+        {
+          "__resolveType": "algolia/workflows/index/product.ts"
+        }
+      ],
+      "__resolveType": "resolved"
+    },
+    "__resolveType": "vtex/actions/notification.ts"
+  },
+  "Product Page": {
+    "name": "Product page",
+    "path": "/:slug/p",
+    "sections": [
+      {
+        "__resolveType": "Default - Design System"
+      },
+      {
+        "page": {
+          "__resolveType": "deco-sites/std/functions/vtexProductDetailsPage.ts"
+        },
+        "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1692/f04bdaa9-3568-4ded-ae72-83f179f58456",
+        "__resolveType": "deco-sites/std/sections/SEOPDP.tsx",
+        "titleTemplate": "%s | Agência N1",
+        "structuredData": {
+          "useDataFromSEO": true
+        }
+      },
+      {
+        "__resolveType": "Header Global"
+      },
+      {
+        "__resolveType": "Default - Product Details"
+      },
+      {
+        "__resolveType": "Produtos relacionados - ProductShelf"
+      },
+      {
+        "__resolveType": "Footer Global"
+      }
+    ],
+    "__resolveType": "$live/pages/LivePage.tsx"
+  },
+  "Worflow Raiz": {
+    "__resolveType": "deco-sites/technos/apps/workflow-raiz.ts"
+  },
+  "my-redirects": {
+    "redirects": [
+      {
+        "to": "https://www.google.com",
+        "from": "/exemplo",
+        "type": "temporary"
+      }
+    ],
+    "__resolveType": "deco-sites/std/loaders/x/redirects.ts"
+  },
+  "vtex-trigger": {
+    "product": [
+      {
+        "__resolveType": "algolia/workflows/index/product.ts"
+      }
+    ],
+    "__resolveType": "vtex/workflows/events.ts"
+  },
+  "Benefits - 01": {
+    "title": "Take a look at our benefits",
+    "benefits": [
+      {
+        "icon": "Truck",
+        "label": "Free Shipping Worldwide",
+        "description": "Shop online with no additional fees!"
+      },
+      {
+        "icon": "Phone",
+        "label": "24/7 Online Support",
+        "description": "Instant assistance anytime"
+      },
+      {
+        "icon": "Discount",
+        "label": "15% on the first purchase",
+        "description": "Discount for new customers"
+      },
+      {
+        "icon": "ArrowsPointingOut",
+        "label": "Hassle-Free Returns",
+        "description": "Easy and Convenient Return Policy"
+      }
+    ],
+    "__resolveType": "deco-sites/technos/sections/Content/Benefits.tsx"
+  },
+  "Benefits - 02": {
+    "title": "Take a look at our benefits ",
+    "layout": {
+      "variation": "Color reverse",
+      "headerAlignment": "center"
+    },
+    "benefits": [
+      {
+        "icon": "Truck",
+        "label": "Free Shipping Worldwide",
+        "description": "Shop online with no additional fees!"
+      },
+      {
+        "icon": "Phone",
+        "label": "24/7 Online Support",
+        "description": "Instant assistance anytime"
+      },
+      {
+        "icon": "Discount",
+        "label": "15% on the first purchase",
+        "description": "Discount for new customers"
+      },
+      {
+        "icon": "ArrowsPointingOut",
+        "label": "Easy Hassle-Free Returns",
+        "description": "Easy and Convenient Return Policy"
+      }
+    ],
+    "__resolveType": "deco-sites/technos/sections/Content/Benefits.tsx"
+  },
+  "Benefits - 03": {
+    "title": "Take a look at our benefits ",
+    "layout": {
+      "variation": "With border",
+      "headerAlignment": "center"
+    },
+    "benefits": [
+      {
+        "icon": "Truck",
+        "label": "Free Shipping Worldwide",
+        "description": "Shop online with no additional fees!"
+      },
+      {
+        "icon": "Phone",
+        "label": "24/7 Online Support",
+        "description": "Instant assistance anytime"
+      },
+      {
+        "icon": "Discount",
+        "label": "15% on the first purchase",
+        "description": "Discount for new customers"
+      },
+      {
+        "icon": "ArrowsPointingOut",
+        "label": "Easy Hassle-Free Returns",
+        "description": "Easy and Convenient Return Policy"
+      }
+    ],
+    "__resolveType": "deco-sites/technos/sections/Content/Benefits.tsx"
+  },
+  "Carousel - 01": {
+    "images": [
+      {
+        "alt": "/feminino",
+        "action": {
+          "href": "https://www.deco.cx/",
+          "label": "deco.cx",
+          "title": "VTEX Store",
+          "subTitle": "Visit our site and start building now:"
+        },
+        "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/24278f9e-412d-4a8a-b2d3-57353bb1b368",
+        "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/96e58473-71aa-4419-af42-7d1a3d66b1ae"
+      },
+      {
+        "alt": "/feminino",
+        "action": {
+          "href": "https://www.deco.cx/",
+          "label": "deco.cx",
+          "title": "VTEX Store",
+          "subTitle": "Visit our site and start building now:"
+        },
+        "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/eeaa624c-a3e1-45e8-a6fe-034233cfbcd0",
+        "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/7949d031-9a79-4639-b85e-62fd90af85a9"
+      },
+      {
+        "alt": "/feminino",
+        "action": {
+          "href": "https://www.deco.cx/",
+          "label": "deco.cx",
+          "title": "VTEX Store",
+          "subTitle": "Visit our site and start building now:"
+        },
+        "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/ae89571c-4a7c-44bf-9aeb-a341fd049d19",
+        "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/7ec121e4-5cfe-4b7b-b942-d1ed4493803d"
+      }
+    ],
+    "preload": true,
+    "__resolveType": "deco-sites/technos/sections/Images/Carousel.tsx"
+  },
+  "Fashion theme": {
+    "font": {
+      "fonts": [
+        {
+          "family": "Poppins",
+          "variations": [
+            {
+              "weight": "400"
+            },
+            {
+              "weight": "600"
+            },
+            {
+              "weight": "700"
+            }
+          ]
+        }
+      ],
+      "__resolveType": "website/loaders/fonts/googleFonts.ts"
+    },
+    "fonts": [
+      {
+        "fontFamily": "Poppins"
+      }
+    ],
+    "mainColors": {
+      "primary": "#384c53",
+      "base-100": "#FFFFFF",
+      "tertiary": "#5f9a99",
+      "secondary": "#a2accc"
+    },
+    "buttonStyle": {
+      "--border-btn": "1px",
+      "--rounded-btn": "0.2rem",
+      "--btn-text-case": "normal-case",
+      "--btn-focus-scale": "0.95"
+    },
+    "__resolveType": "deco-sites/technos/sections/Theme/Theme.tsx",
+    "complementaryColors": {
+      "primary": {
+        "primary-content": "#ffffff"
+      }
+    }
+  },
+  "Footer Global": {
+    "sections": [
+      {
+        "label": "Newslettter",
+        "section": {
+          "form": {
+            "name": {},
+            "email": {},
+            "button": {
+              "variant": "primary"
+            }
+          },
+          "text": "<p>Cadastre-se e seja um dos primeiros a saber de todas as novidades e ofertas.</p>",
+          "__resolveType": "deco-sites/technos/sections/Newsletter/Newsletter.tsx"
+        },
+        "withContainer": true,
+        "backgroundColor": "#2F1893",
+        "verticalSpacing": "none"
+      },
+      {
+        "label": "Footer",
+        "section": {
+          "email": "contato@agencian1.com.br",
+          "phone": "11999999999",
+          "payments": [
+            {
+              "alt": "Mastercard",
+              "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1310/4d6d7752-f54d-4134-9f3f-bd87debefad9",
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1692/9954cf76-2e68-4e01-bccb-08a71a3b3dd1"
+            },
+            {
+              "alt": "Visa",
+              "icon": "Elo",
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1692/56774fb5-1b46-49e9-a98d-b0374629ff34"
+            },
+            {
+              "alt": "Elo",
+              "icon": "Visa",
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1692/dc227df4-428a-491a-a45b-4d6ea957e8db"
+            },
+            {
+              "alt": "American Express",
+              "icon": "AmericanExpress",
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1692/90ebb7c1-9761-4e02-b362-230b8b6cf68b"
+            },
+            {
+              "alt": "Pix",
+              "icon": "Pix",
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1692/4d3ea048-365f-4730-bb2f-aa2413e092a3"
+            },
+            {
+              "alt": "Boleto",
+              "icon": "Boleto",
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1692/b0f6cb07-3146-4a34-9866-4a2c84647088"
+            }
+          ],
+          "sections": [
+            {
+              "label": "Institucional",
+              "children": [
+                {
+                  "href": "#",
+                  "label": "Quem somos"
+                },
+                {
+                  "href": "#",
+                  "label": "Nossas Lojas"
+                },
+                {
+                  "href": "/",
+                  "label": "Fale conosco"
+                }
+              ]
+            },
+            {
+              "label": "Minha Conta",
+              "children": [
+                {
+                  "href": "#",
+                  "label": "Meus Dados"
+                },
+                {
+                  "href": "#",
+                  "label": "Meus Pedidos"
+                },
+                {
+                  "href": "#",
+                  "label": "Login"
+                }
+              ]
+            },
+            {
+              "label": "Suporte",
+              "children": [
+                {
+                  "href": "#",
+                  "label": "Política de privacidade"
+                },
+                {
+                  "href": "#",
+                  "label": "Perguntas Frequentes"
+                },
+                {
+                  "href": "#",
+                  "label": "Troca ou devolução"
+                }
+              ]
+            }
+          ],
+          "copyRight": "Agência N1 - Todos os Direitos Reservados",
+          "poweredby": [
+            {
+              "alt": "agencia n1",
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1310/83ccd7e4-5d2f-453a-aa4e-a1f8719b5de4",
+              "label": "Created By"
+            },
+            {
+              "alt": "vtex",
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1310/4749b4f9-1943-4066-b918-2dae9e469611",
+              "label": "Powered by"
+            }
+          ],
+          "securities": [
+            {
+              "alt": "Let's Encrypt",
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1310/3be20735-a11c-4274-a43b-9fe3ac96121a"
+            }
+          ],
+          "openingHours": "<p>Seg. à Sex. das 09:00h às 18:00h </p><p> Sábado das 10:00h às 14:00h</p>",
+          "__resolveType": "deco-sites/technos/sections/Footer/Footer.tsx",
+          "socialNetWorks": [
+            {
+              "href": "#",
+              "icon": "Facebook",
+              "label": "Facebook",
+              "openNewView": true
+            },
+            {
+              "href": "#",
+              "icon": "Twitter",
+              "label": "Twitter",
+              "openNewView": true
+            },
+            {
+              "href": "#",
+              "icon": "Instagram",
+              "label": "Instagram",
+              "openNewView": true
+            },
+            {
+              "href": "#",
+              "icon": "YouTube",
+              "label": "Youtube",
+              "openNewView": true
+            },
+            {
+              "href": "#",
+              "icon": "Tiktok",
+              "label": "Tiktok",
+              "openNewView": true
+            }
+          ]
+        },
+        "spacing": 0,
+        "withContainer": true,
+        "verticalSpacing": "none"
+      },
+      {
+        "label": "Copyright",
+        "section": {
+          "copyRight": "Agência N1 - Todos os Direitos Reservados",
+          "__resolveType": "deco-sites/technos/sections/Content/CopyRight.tsx"
+        },
+        "backgroundColor": "#F7F7F7",
+        "verticalSpacing": "none"
+      }
+    ],
+    "__resolveType": "deco-sites/technos/sections/Container.tsx",
+    "backgroundColor": "pink"
+  },
+  "Header Global": {
+    "sections": [
+      {
+        "label": "Topbar",
+        "shadow": "none",
+        "section": {
+          "alerts": [
+            {
+              "alt": "PRIMEIRA TROCA GRÁTIS",
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1310/bba57518-47fc-4f56-9380-86b0152df373",
+              "textAlert": "PRIMEIRA TROCA GRÁTIS",
+              "textColor": "#ffffff"
+            },
+            {
+              "alt": "FRETE GRÁTIS NAS COMPRAS ACIMA DE R$500",
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1310/10c40a1d-1c13-4bbd-990a-1d7a81ba9f1e",
+              "textAlert": "FRETE GRÁTIS NAS COMPRAS ACIMA DE R$500",
+              "textColor": "#ffffff"
+            },
+            {
+              "alt": "PARCELE EM ATÉ 6X SEM JUROS",
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1692/8407d8ed-5ff1-43ab-958a-d4698cb997d3",
+              "textAlert": "PARCELE EM ATÉ 6X SEM JUROS",
+              "textColor": "#ffffff"
+            }
+          ],
+          "interval": 5000,
+          "__resolveType": "deco-sites/technos/sections/Header/TopNavBar.tsx"
+        },
+        "backgroundColor": "#E93A7D",
+        "verticalSpacing": "both"
+      },
+      {
+        "label": "Header",
+        "shadow": "md",
+        "section": {
+          "minicart": {
+            "mobile": {
+              "buttonMode": "primary"
+            },
+            "desktop": {
+              "buttonMode": "secondary"
+            },
+            "buttonMode": "secondary",
+            "goToCartLabel": "Finalzar Compra",
+            "showClearButton": false
+          },
+          "navItems": [
+            {
+              "href": "/departamento-1",
+              "label": "Lançamentos",
+              "children": []
+            },
+            {
+              "href": "/departamento-1",
+              "label": "Tênis",
+              "children": [
+                {
+                  "href": "/departamento-1/categoria-2",
+                  "label": "Casual",
+                  "children": []
+                },
+                {
+                  "href": "/departamento-1/categoria-2",
+                  "label": "Corrida",
+                  "children": []
+                },
+                {
+                  "href": "/departamento-1/categoria-2",
+                  "label": "Chuteiras",
+                  "children": []
+                },
+                {
+                  "href": "/departamento-1/categoria-2",
+                  "label": "Basquete",
+                  "children": []
+                },
+                {
+                  "href": "/departamento-1/categoria-2",
+                  "label": "Treino & Academia",
+                  "children": []
+                },
+                {
+                  "href": "/departamento-1/categoria-2",
+                  "label": "Skateboarding",
+                  "children": []
+                },
+                {
+                  "href": "/departamento-1/categoria-2",
+                  "label": "Para Jogar Tênis",
+                  "children": []
+                },
+                {
+                  "href": "/departamento-1/categoria-2",
+                  "label": "Ciclismo",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "href": "/departamento-1",
+              "label": "T-shirts",
+              "children": []
+            },
+            {
+              "href": "/departamento-1",
+              "label": "Calças",
+              "children": []
+            },
+            {
+              "href": "/departamento-1",
+              "label": "Inverno",
+              "children": []
+            },
+            {
+              "href": "/departamento-1",
+              "label": "Off",
+              "children": [],
+              "highlighted": true
+            }
+          ],
+          "searchbar": {
+            "cardLayout": {
+              "hide": {
+                "skuSelector": true,
+                "productDescription": true
+              },
+              "basics": {
+                "ctaMode": "Add to Cart",
+                "ctaText": "Adicionar ao carrinho",
+                "mobileCtaText": "Adicionar ao carrinho",
+                "contentAlignment": "Center"
+              },
+              "discount": {
+                "label": "off",
+                "variant": "emphasis"
+              },
+              "onMouseOver": {
+                "showCta": true
+              },
+              "elementsPositions": {}
+            },
+            "placeholder": "O que esta procurando?"
+          },
+          "placeholder": "O que esta procurando?",
+          "__resolveType": "deco-sites/technos/sections/Header/HeaderLayout.tsx"
+        },
+        "spacing": 0,
+        "withContainer": true,
+        "verticalSpacing": "both"
+      }
+    ],
+    "__resolveType": "deco-sites/technos/sections/Container.tsx"
+  },
+  "LinkTree - 01": {
+    "links": [
+      {
+        "href": "https://www.instagram.com/deco.cx/",
+        "label": "Instagram"
+      },
+      {
+        "href": "https://br.linkedin.com/company/deco-cx",
+        "label": "LinkedIn"
+      }
+    ],
+    "title": "Fashion links",
+    "social": [],
+    "__resolveType": "deco-sites/technos/sections/Links/LinkTree.tsx"
+  },
+  "Search Loader": {
+    "data": {
+      "facets": [],
+      "hitsPerPage": 12,
+      "startingPage": 0,
+      "__resolveType": "algolia/loaders/product/listingPage.ts",
+      "sortFacetValuesBy": "count"
+    },
+    "extensions": [
+      {
+        "__resolveType": "vtex/loaders/product/extensions/listingPage.ts"
+      }
+    ],
+    "__resolveType": "commerce/loaders/product/extensions/listingPage.ts"
+  },
+  "Teste augusto": {
+    "fonts": {
+      "fontFamily": "'Albert Sans'",
+      "styleInnerHtml": "/* latin-ext */ @font-face {   font-family: 'Albert Sans';   font-display: swap;   font-style: normal;   font-weight: 400;   src: url(https://fonts.gstatic.com/s/albertsans/v1/i7dOIFdwYjGaAMFtZd_QA1ZVYFeQGQyUV3U.woff2) format('woff2');   unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; }  /* latin */ @font-face {   font-family: 'Albert Sans';   font-display: swap;   font-style: normal;   font-weight: 400;   src: url(https://fonts.gstatic.com/s/albertsans/v1/i7dOIFdwYjGaAMFtZd_QA1ZbYFeQGQyU.woff2) format('woff2');   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }  /* latin-ext */ @font-face {   font-family: 'Albert Sans';   font-display: swap;   font-style: normal;   font-weight: 500;   src: url(https://fonts.gstatic.com/s/albertsans/v1/i7dOIFdwYjGaAMFtZd_QA1ZVYFeQGQyUV3U.woff2) format('woff2');   unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; }  /* latin */ @font-face {   font-family: 'Albert Sans';   font-display: swap;   font-style: normal;   font-weight: 500;   src: url(https://fonts.gstatic.com/s/albertsans/v1/i7dOIFdwYjGaAMFtZd_QA1ZbYFeQGQyU.woff2) format('woff2');   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }  /* latin-ext */ @font-face {   font-family: 'Albert Sans';   font-display: swap;   font-style: normal;   font-weight: 700;   src: url(https://fonts.gstatic.com/s/albertsans/v1/i7dOIFdwYjGaAMFtZd_QA1ZVYFeQGQyUV3U.woff2) format('woff2');   unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; }  /* latin */ @font-face {   font-family: 'Albert Sans';   font-display: swap;   font-style: normal;   font-weight: 700;   src: url(https://fonts.gstatic.com/s/albertsans/v1/i7dOIFdwYjGaAMFtZd_QA1ZbYFeQGQyU.woff2) format('woff2');   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }"
+    },
+    "colors": {
+      "info": "#F0F5FF",
+      "error": "#FFE9E5",
+      "accent": "#E37968",
+      "neutral": "#787878",
+      "primary": "#273645",
+      "success": "#EAFAF2",
+      "warning": "#FFF8E5",
+      "base-100": "#FFFFFF",
+      "optional": {
+        "base-content": "#dd0808"
+      },
+      "secondary": "#6B8A60"
+    },
+    "baseColors": {
+      "base-100": "#FFFFFF"
+    },
+    "buttonStyle": {
+      "--border-btn": "3px",
+      "--rounded-btn": "2.5rem",
+      "--btn-text-case": "uppercase",
+      "--btn-focus-scale": "0.95"
+    },
+    "primaryColor": {
+      "primary": "#064ca7"
+    },
+    "__resolveType": "deco-sites/technos/sections/DesignSystem/DesignSystem.tsx",
+    "miscellaneous": {
+      "--border-btn": "1px",
+      "--tab-border": "1px",
+      "--tab-radius": "0.5rem",
+      "--rounded-box": "1rem",
+      "--rounded-btn": "0.3rem",
+      "--animation-btn": "0.25s",
+      "--btn-text-case": "uppercase",
+      "--rounded-badge": "1.9rem",
+      "--animation-input": "0.2s",
+      "--btn-focus-scale": "0.95"
+    },
+    "tertiaryColor": {
+      "tertiary": "#e01ac5"
+    },
+    "secondaryColor": {
+      "secondary": "#c8e633",
+      "secondary-content": "#453b3b"
+    }
+  },
+  "configShopify": {
+    "__resolveType": "deco-sites/std/accounts/shopify.ts"
+  },
+  "Shortcuts - 01": {
+    "layout": {
+      "tooltip": true
+    },
+    "onHover": "Show label",
+    "shortcuts": [
+      {
+        "icon": "WhatsApp",
+        "link": "/",
+        "label": "WhatsApp"
+      },
+      {
+        "icon": "Message",
+        "link": "/",
+        "label": "Chat"
+      },
+      {
+        "icon": "Ruler",
+        "link": "/",
+        "label": "Measurements"
+      },
+      {
+        "icon": "Truck",
+        "link": "/",
+        "label": "Shipping"
+      },
+      {
+        "icon": "ArrowsPointingOut",
+        "link": "/",
+        "label": "Returns"
+      }
+    ],
+    "__resolveType": "deco-sites/technos/sections/Links/Shortcuts.tsx"
+  },
+  "implementation": {
+    "__resolveType": "decohub/apps/implementation.ts",
+    "expectedGoLive": "2023-11-30"
+  },
+  "random-product": {
+    "rootEndpoint": "https://random-data-api.com/api/v2",
+    "__resolveType": "decohub/apps/random-product.ts"
+  },
+  "Fashion by Deco": {
+    "fonts": {
+      "fontFamily": "'Albert Sans'",
+      "styleInnerHtml": "/* latin-ext */ @font-face {   font-family: 'Albert Sans';   font-display: swap;   font-style: normal;   font-weight: 400;   src: url(https://fonts.gstatic.com/s/albertsans/v1/i7dOIFdwYjGaAMFtZd_QA1ZVYFeQGQyUV3U.woff2) format('woff2');   unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; }  /* latin */ @font-face {   font-family: 'Albert Sans';   font-display: swap;   font-style: normal;   font-weight: 400;   src: url(https://fonts.gstatic.com/s/albertsans/v1/i7dOIFdwYjGaAMFtZd_QA1ZbYFeQGQyU.woff2) format('woff2');   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }  /* latin-ext */ @font-face {   font-family: 'Albert Sans';   font-display: swap;   font-style: normal;   font-weight: 500;   src: url(https://fonts.gstatic.com/s/albertsans/v1/i7dOIFdwYjGaAMFtZd_QA1ZVYFeQGQyUV3U.woff2) format('woff2');   unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; }  /* latin */ @font-face {   font-family: 'Albert Sans';   font-display: swap;   font-style: normal;   font-weight: 500;   src: url(https://fonts.gstatic.com/s/albertsans/v1/i7dOIFdwYjGaAMFtZd_QA1ZbYFeQGQyU.woff2) format('woff2');   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }  /* latin-ext */ @font-face {   font-family: 'Albert Sans';   font-display: swap;   font-style: normal;   font-weight: 700;   src: url(https://fonts.gstatic.com/s/albertsans/v1/i7dOIFdwYjGaAMFtZd_QA1ZVYFeQGQyUV3U.woff2) format('woff2');   unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; }  /* latin */ @font-face {   font-family: 'Albert Sans';   font-display: swap;   font-style: normal;   font-weight: 700;   src: url(https://fonts.gstatic.com/s/albertsans/v1/i7dOIFdwYjGaAMFtZd_QA1ZbYFeQGQyU.woff2) format('woff2');   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }"
+    },
+    "colors": {
+      "info": "#F0F5FF",
+      "error": "#FFE9E5",
+      "accent": "#E37968",
+      "neutral": "#787878",
+      "primary": "#273645",
+      "success": "#EAFAF2",
+      "warning": "#FFF8E5",
+      "base-100": "#FFFFFF",
+      "secondary": "#6B8A60"
+    },
+    "__resolveType": "deco-sites/technos/sections/DesignSystem/DesignSystem.tsx",
+    "miscellaneous": {
+      "--border-btn": "1px",
+      "--tab-border": "1px",
+      "--tab-radius": "0.5rem",
+      "--rounded-box": "1rem",
+      "--rounded-btn": "0.3rem",
+      "--animation-btn": "0.25s",
+      "--btn-text-case": "uppercase",
+      "--rounded-badge": "1.9rem",
+      "--animation-input": "0.2s",
+      "--btn-focus-scale": "0.95"
+    }
+  },
+  "Home - Carousel": {
+    "sections": [
+      {
+        "label": "Carousel",
+        "section": {
+          "images": [
+            {
+              "alt": "70% OFF",
+              "action": {
+                "label": "Comprar",
+                "title": "70% OFF",
+                "variant": "secondary",
+                "mobileTitle": "70% OFF"
+              },
+              "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1310/a3ec37b9-95ad-4ea4-af30-3f28342a5aca",
+              "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1310/d0f8991b-3022-4a9c-a749-e45070bf2dd1"
+            },
+            {
+              "alt": "TÊNIS SPORTS",
+              "action": {
+                "label": "Comprar",
+                "title": "TÊNIS SPORTS",
+                "variant": "secondary",
+                "mobileTitle": "TÊNIS SPORTS"
+              },
+              "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1310/824ca011-623e-4898-881e-283d5b1a14c2",
+              "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1310/f65f81ea-c088-43dc-a6b1-8322fcf102ce"
+            }
+          ],
+          "preload": true,
+          "__resolveType": "deco-sites/technos/sections/Images/Carousel.tsx",
+          "showPaginationDots": "Always"
+        },
+        "verticalSpacing": "both"
+      }
+    ],
+    "__resolveType": "deco-sites/technos/sections/Container.tsx"
+  },
+  "Newsletter - 01": {
+    "form": {
+      "helpText": "<p>By subscribing you agree to with our <u>Privacy Policy</u>.</p>",
+      "buttonText": "Subscribe",
+      "placeholder": "Enter your email"
+    },
+    "title": "Newsletter",
+    "layout": {
+      "content": {
+        "border": false,
+        "bgColor": "Reverse",
+        "alignment": "Side to side"
+      },
+      "headerFontSize": "Large"
+    },
+    "__resolveType": "deco-sites/technos/sections/Newsletter/Newsletter.tsx"
+  },
+  "Newsletter - 02": {
+    "form": {
+      "helpText": "<p>By subscribing you agree to with our <u>Privacy Policy</u>.</p>",
+      "buttonText": "Subscribe",
+      "placeholder": "Enter your email"
+    },
+    "title": "Sign up for our newsletter",
+    "layout": {
+      "content": {
+        "border": false,
+        "bgColor": "Reverse",
+        "alignment": "Center"
+      },
+      "headerFontSize": "Large"
+    },
+    "__resolveType": "deco-sites/technos/sections/Newsletter/Newsletter.tsx"
+  },
+  "Newsletter - 03": {
+    "form": {
+      "helpText": "<p>By subscribing you agree to with our <u>Privacy Policy</u>.</p>",
+      "buttonText": "Subscribe",
+      "placeholder": "Enter your email"
+    },
+    "title": "Sign up for our newsletter",
+    "layout": {
+      "content": {
+        "border": false,
+        "bgColor": "Reverse",
+        "alignment": "Left"
+      },
+      "headerFontSize": "Large"
+    },
+    "__resolveType": "deco-sites/technos/sections/Newsletter/Newsletter.tsx"
+  },
+  "Newsletter - 04": {
+    "form": {
+      "helpText": "<p>By subscribing you agree to with our <u>Privacy Policy</u>.</p>",
+      "buttonText": "Subscribe",
+      "placeholder": "Enter your email"
+    },
+    "title": "Newsletter",
+    "layout": {
+      "content": {
+        "border": true,
+        "bgColor": "Reverse",
+        "alignment": "Side to side"
+      },
+      "headerFontSize": "Large"
+    },
+    "__resolveType": "deco-sites/technos/sections/Newsletter/Newsletter.tsx"
+  },
+  "Newsletter - 05": {
+    "form": {
+      "helpText": "<p>By subscribing you agree to with our <u>Privacy Policy</u>.</p>",
+      "buttonText": "Subscribe",
+      "placeholder": "Enter your email"
+    },
+    "title": "Sign up for our newsletter",
+    "layout": {
+      "content": {
+        "border": true,
+        "bgColor": "Reverse",
+        "alignment": "Center"
+      },
+      "headerFontSize": "Large"
+    },
+    "__resolveType": "deco-sites/technos/sections/Newsletter/Newsletter.tsx"
+  },
+  "Newsletter - 06": {
+    "form": {
+      "helpText": "<p>By subscribing you agree to with our <u>Privacy Policy</u>.</p>",
+      "buttonText": "Subscribe",
+      "placeholder": "Enter your email"
+    },
+    "title": "Sign up for our newsletter",
+    "layout": {
+      "content": {
+        "border": true,
+        "bgColor": "Reverse",
+        "alignment": "Left"
+      },
+      "headerFontSize": "Large"
+    },
+    "__resolveType": "deco-sites/technos/sections/Newsletter/Newsletter.tsx"
+  },
+  "configYourViews": {
+    "__resolveType": "deco-sites/std/accounts/yourViews.ts"
+  },
+  "Banner Grid - 01": {
+    "title": "Summer bags",
+    "banners": [
+      {
+        "alt": "a",
+        "href": "a",
+        "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/82727553-f670-4e7c-b9c2-9452aed1955f",
+        "srcDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/7b3a9d75-57a5-43cf-a3c5-f689a997f24e"
+      },
+      {
+        "alt": "a",
+        "href": "a",
+        "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/c5c6bdf6-5555-488c-8b14-719e4158dea6",
+        "srcDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/3e2b7824-d75c-4704-8d32-621bfc9b20cf"
+      }
+    ],
+    "borderRadius": {
+      "mobile": "3xl",
+      "desktop": "3xl"
+    },
+    "itemsPerLine": {
+      "mobile": 2,
+      "desktop": 2
+    },
+    "__resolveType": "deco-sites/technos/sections/Images/BannerGrid.tsx"
+  },
+  "Not Found Global": {
+    "sections": [
+      {
+        "label": "NotFound",
+        "section": {
+          "hints": {
+            "hints": [
+              "Verifique os termos digitados.",
+              "Tente utilizar uma única palavra.",
+              "Utilize termos genéricos na busca.",
+              "Procure utilizar sinônimos ao termo desejado."
+            ],
+            "title": "Confira algumas dicas para realizar sua busca:"
+          },
+          "title": "Ops!",
+          "__resolveType": "deco-sites/technos/sections/Miscellaneous/NotFound.tsx",
+          "termDescription": "Resultados de busca encontrados para:"
+        },
+        "verticalSpacing": "both"
+      },
+      {
+        "label": "ProductShelf",
+        "section": {
+          "sections": [
+            {
+              "label": "ProductShelf",
+              "section": {
+                "title": "Você vai curtir também",
+                "layout": {
+                  "itemsPerPage": [
+                    {
+                      "screenWidth": 425,
+                      "itemsQuantity": 2
+                    },
+                    {
+                      "screenWidth": 786,
+                      "itemsQuantity": 3
+                    },
+                    {
+                      "screenWidth": 1170,
+                      "itemsQuantity": 4
+                    },
+                    {
+                      "screenWidth": 1440,
+                      "itemsQuantity": 5
+                    }
+                  ],
+                  "headerAlignment": "center"
+                },
+                "seeMore": {
+                  "url": "#",
+                  "label": "+ ver mais"
+                },
+                "products": {
+                  "ids": [],
+                  "count": 10,
+                  "collection": "160",
+                  "__resolveType": "deco-sites/std/loaders/vtex/intelligentSearch/productList.ts"
+                },
+                "cardLayout": {
+                  "hide": {
+                    "skuSelector": true,
+                    "productDescription": true
+                  },
+                  "basics": {
+                    "ctaMode": "Add to Cart",
+                    "ctaText": "Adicionar ao carrinho",
+                    "mobileCtaText": "Adicionar ao carrinho",
+                    "contentAlignment": "Center"
+                  },
+                  "discount": {
+                    "label": "off",
+                    "variant": "emphasis"
+                  },
+                  "onMouseOver": {
+                    "showCta": true
+                  },
+                  "elementsPositions": {}
+                },
+                "__resolveType": "deco-sites/technos/sections/Product/ProductShelf.tsx",
+                "showPaginationArrows": "Always"
+              },
+              "withContainer": false,
+              "verticalSpacing": "none"
+            }
+          ],
+          "__resolveType": "deco-sites/technos/sections/Container.tsx"
+        },
+        "verticalSpacing": "both"
+      }
+    ],
+    "__resolveType": "deco-sites/technos/sections/Container.tsx"
+  },
+  "VtexVestidoLists": {
+    "count": 2,
+    "query": "vestido",
+    "__resolveType": "deco-sites/std/functions/vtexProductList.ts"
+  },
+  "Aside Menu Global": {
+    "menuItems": [
+      {
+        "href": "#",
+        "label": "Quem Somos"
+      },
+      {
+        "href": "/institucional/text",
+        "label": "Política de Privacidade"
+      },
+      {
+        "href": "/institucional/cards",
+        "label": "Nossas Lojas"
+      },
+      {
+        "href": "/institucional/accordion",
+        "label": "Perguntas Frequentes"
+      },
+      {
+        "href": "#",
+        "label": "Troca ou Devolução"
+      },
+      {
+        "href": "#",
+        "label": "Fale Conosco"
+      }
+    ],
+    "__resolveType": "deco-sites/technos/sections/Institutional/AsideMenu.tsx"
+  },
+  "Testimonials - 01": {
+    "title": "Testimonials",
+    "layout": {
+      "variation": "Grid",
+      "headerAlignment": "center"
+    },
+    "description": "Take a look at what our customers are saying",
+    "testimonials": [
+      {
+        "text": "Love shopping at Fashion! Quality products, exceptional service. Hassle-free returns and free shipping. My go-to for stylish fashion!",
+        "user": {
+          "name": "Rafael Crespo",
+          "avatar": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/6a595043-fb5b-43b4-b6dd-bd3154e4e595"
+        },
+        "image": {
+          "alt": "deco",
+          "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/d0a79cf6-6825-4624-884c-f30bda6c3daf"
+        }
+      },
+      {
+        "text": "Thrilled with my first Fashion purchase. Seamless process, prompt delivery with free shipping. Exceeded expectations in style and quality!",
+        "user": {
+          "name": "Tiago Gimenes",
+          "avatar": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/850df7f9-120e-4155-ae79-c76e737535ee"
+        },
+        "image": {
+          "alt": "deco",
+          "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/9dc5dddc-f8b5-4f70-847b-1f91b84ad7dc"
+        }
+      },
+      {
+        "text": "Fashion is my favorite online retailer. On-trend selection, exceptional quality. Easy returns and 24/7 online support. A delightful shopping experience!",
+        "user": {
+          "name": "Maria Luiza Aires",
+          "avatar": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/8327a46f-bb4e-4ae8-8cf2-963d530d3066"
+        },
+        "image": {
+          "alt": "deco",
+          "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/ca4c79ea-5bd9-42d3-a60a-07c99c5f45c4"
+        }
+      }
+    ],
+    "__resolveType": "deco-sites/technos/sections/Content/Testimonials.tsx"
+  },
+  "Testimonials - 02": {
+    "title": "Testimonials",
+    "layout": {
+      "variation": "Slider",
+      "headerAlignment": "center"
+    },
+    "description": "Take a look at what our customers are saying",
+    "testimonials": [
+      {
+        "text": "I can't say enough about my experience shopping at this online fashion store. The website design is not only visually stunning but also incredibly user-friendly. It's a pleasure to browse through their extensive collection of fashionable clothing and accessories. The seamless checkout process makes purchasing items a breeze, and the fast and reliable shipping ensures I receive my orders in no time.",
+        "user": {
+          "name": "Rafael Crespo",
+          "avatar": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/6a595043-fb5b-43b4-b6dd-bd3154e4e595"
+        },
+        "image": {
+          "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/d0a79cf6-6825-4624-884c-f30bda6c3daf"
+        }
+      },
+      {
+        "text": "Thrilled with my first Fashion purchase. Seamless process, prompt delivery with free shipping. Exceeded expectations in style and quality!",
+        "user": {
+          "name": "Tiago Gimenes",
+          "avatar": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/850df7f9-120e-4155-ae79-c76e737535ee"
+        },
+        "image": {
+          "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/9dc5dddc-f8b5-4f70-847b-1f91b84ad7dc"
+        }
+      },
+      {
+        "text": "Fashion is my favorite online retailer. On-trend selection, exceptional quality. Easy returns and 24/7 online support. A delightful shopping experience!",
+        "user": {
+          "name": "Maria Luiza Aires",
+          "avatar": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/8327a46f-bb4e-4ae8-8cf2-963d530d3066"
+        },
+        "image": {
+          "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/ca4c79ea-5bd9-42d3-a60a-07c99c5f45c4"
+        }
+      }
+    ],
+    "__resolveType": "deco-sites/technos/sections/Content/Testimonials.tsx"
+  },
+  "Category List - 01": {
+    "list": [
+      {
+        "href": "/masculino",
+        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/5a8edfec-400f-421f-b436-4ce23d2b13e7",
+        "label": "Dresses",
+        "description": "Amazing"
+      },
+      {
+        "href": "/feminino",
+        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/7363da7a-8530-4e19-8b76-6f92c4da3f1e",
+        "label": "Bags",
+        "description": "Bags"
+      },
+      {
+        "href": "/",
+        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/33755494-9104-410e-9e48-256aef7fc113",
+        "label": "Shoes",
+        "description": "New deals"
+      },
+      {
+        "href": "/",
+        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/2d507523-6f5a-4bb5-98d5-d9c944b35845",
+        "label": "Jackets",
+        "description": "New colors"
+      },
+      {
+        "href": "/",
+        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/907b5510-d4a0-4d75-b2bf-c0c9e9b0ba68",
+        "label": "Jeans",
+        "description": "Amazing"
+      },
+      {
+        "href": "/",
+        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/40eb7c93-59a7-4963-9917-32508c56e4cc",
+        "label": "Shorts",
+        "description": "Summer"
+      }
+    ],
+    "header": {
+      "title": "Categories",
+      "description": "Take a look at our categories"
+    },
+    "layout": {
+      "categoryCard": {
+        "textPosition": "top",
+        "textAlignment": "center"
+      },
+      "headerAlignment": "center"
+    },
+    "__resolveType": "deco-sites/technos/sections/Category/CategoryList.tsx"
+  },
+  "Image Gallery - 01": {
+    "title": "New collections",
+    "banners": [
+      {
+        "alt": "Fashion",
+        "href": "/",
+        "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/29dbf8d4-90c3-43f7-9b6b-4c6bda5e7835"
+      },
+      {
+        "alt": "Fashion",
+        "href": "/",
+        "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/3210eea1-5437-4f19-8327-8b8fa4edfc45"
+      },
+      {
+        "alt": "Fashion",
+        "href": "/",
+        "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/1e6250d4-f9d2-4185-b8a6-b0e8a8fed4a7"
+      },
+      {
+        "alt": "Fashion",
+        "href": "/",
+        "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/a8d36df6-4b96-4421-bb6c-de0fe1478e06"
+      }
+    ],
+    "description": "Discover the collections of the season",
+    "__resolveType": "deco-sites/technos/sections/Images/ImageGallery.tsx"
+  },
+  "Image Gallery - 02": {
+    "title": "New collections",
+    "layout": {
+      "desktop": "Asymmetric",
+      "headerAlignment": "left"
+    },
+    "banners": [
+      {
+        "alt": "Fashion",
+        "href": "/",
+        "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/5703060b-d1f6-4dc2-898a-ccefeefd2eab"
+      },
+      {
+        "alt": "Fashion",
+        "href": "/",
+        "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/3210eea1-5437-4f19-8327-8b8fa4edfc45"
+      },
+      {
+        "alt": "Fashion",
+        "href": "/",
+        "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/1e6250d4-f9d2-4185-b8a6-b0e8a8fed4a7"
+      },
+      {
+        "alt": "Fashion",
+        "href": "/",
+        "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/a8d36df6-4b96-4421-bb6c-de0fe1478e06"
+      }
+    ],
+    "description": "Discover the collections of the season",
+    "__resolveType": "deco-sites/technos/sections/Images/ImageGallery.tsx"
+  },
+  "Image Gallery - 03": {
+    "title": "New collections",
+    "layout": {
+      "desktop": "Symmetrical",
+      "headerAlignment": "center"
+    },
+    "banners": [
+      {
+        "alt": "Fashion",
+        "href": "/",
+        "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/29dbf8d4-90c3-43f7-9b6b-4c6bda5e7835"
+      },
+      {
+        "alt": "Fashion",
+        "href": "/",
+        "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/3210eea1-5437-4f19-8327-8b8fa4edfc45"
+      },
+      {
+        "alt": "Fashion",
+        "href": "/",
+        "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/1e6250d4-f9d2-4185-b8a6-b0e8a8fed4a7"
+      },
+      {
+        "alt": "Fashion",
+        "href": "/",
+        "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/a8d36df6-4b96-4421-bb6c-de0fe1478e06"
+      }
+    ],
+    "description": "Discover the collections of the season",
+    "__resolveType": "deco-sites/technos/sections/Images/ImageGallery.tsx"
+  },
+  "Image Gallery - 04": {
+    "title": "etset",
+    "layout": {
+      "desktop": "Symmetrical",
+      "headerAlignment": "left"
+    },
+    "banners": [
+      {
+        "alt": "Fashion",
+        "href": "/",
+        "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/29dbf8d4-90c3-43f7-9b6b-4c6bda5e7835",
+        "srcDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/f7b0094f-b8f6-4806-bd43-4f4482958960"
+      },
+      {
+        "alt": "Fashion",
+        "href": "/",
+        "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/3210eea1-5437-4f19-8327-8b8fa4edfc45"
+      },
+      {
+        "alt": "Fashion",
+        "href": "/",
+        "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/1e6250d4-f9d2-4185-b8a6-b0e8a8fed4a7"
+      },
+      {
+        "alt": "Fashion",
+        "href": "/",
+        "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/a8d36df6-4b96-4421-bb6c-de0fe1478e06"
+      }
+    ],
+    "description": "Discover the collections of the season",
+    "__resolveType": "deco-sites/technos/sections/Images/ImageGallery.tsx"
+  },
+  "Product Shelf - 01": {
+    "title": "Teste",
+    "layout": {
+      "headerfontSize": "Normal",
+      "headerAlignment": "center"
+    },
+    "products": {
+      "props": {
+        "sort": "price:desc",
+        "count": 8,
+        "query": "Casacos"
+      },
+      "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
+    },
+    "cardLayout": {
+      "hide": {},
+      "basics": {
+        "oldPriceSize": "Small",
+        "contentAlignment": "Left"
+      },
+      "onMouseOver": {
+        "card": "None",
+        "image": "Change image"
+      },
+      "elementsPositions": {
+        "skuSelector": "Top",
+        "favoriteIcon": "Top right"
+      }
+    },
+    "description": "The best selection for you",
+    "__resolveType": "deco-sites/technos/sections/Product/ProductShelf.tsx"
+  },
+  "Product Shelf - 02": {
+    "title": "What we're loving right now",
+    "layout": {
+      "headerfontSize": "Normal",
+      "headerAlignment": "left"
+    },
+    "products": {
+      "props": {
+        "sort": "price:desc",
+        "count": 8,
+        "query": "Camiseta"
+      },
+      "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
+    },
+    "cardLayout": {
+      "hide": {},
+      "basics": {
+        "oldPriceSize": "Small",
+        "contentAlignment": "Left"
+      },
+      "onMouseOver": {
+        "card": "None",
+        "image": "Change image"
+      },
+      "elementsPositions": {
+        "skuSelector": "Top",
+        "favoriteIcon": "Top right"
+      }
+    },
+    "description": "The best selection for you",
+    "__resolveType": "deco-sites/technos/sections/Product/ProductShelf.tsx"
+  },
+  "Product Shelf - 03": {
+    "title": "What we're loving right now",
+    "layout": {
+      "headerfontSize": "Large",
+      "headerAlignment": "center"
+    },
+    "products": {
+      "props": {
+        "sort": "price:desc",
+        "count": 8,
+        "collection": "139"
+      },
+      "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
+    },
+    "cardLayout": {
+      "hide": {},
+      "basics": {
+        "ctaText": "View more",
+        "oldPriceSize": "Normal",
+        "contentAlignment": "Center"
+      },
+      "onMouseOver": {
+        "card": "None",
+        "image": "Change image"
+      },
+      "elementsPositions": {
+        "skuSelector": "Bottom",
+        "favoriteIcon": "Top right"
+      }
+    },
+    "description": "The best selection for you",
+    "__resolveType": "deco-sites/technos/sections/Product/ProductShelf.tsx"
+  },
+  "Product Shelf - 04": {
+    "title": "What we're loving right now",
+    "layout": {
+      "headerfontSize": "Large",
+      "headerAlignment": "center"
+    },
+    "products": {
+      "props": {
+        "sort": "price:desc",
+        "count": 8,
+        "query": "Vestidos"
+      },
+      "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
+    },
+    "cardLayout": {
+      "hide": {
+        "cta": true,
+        "skuSelector": true
+      },
+      "basics": {
+        "ctaText": "View more",
+        "oldPriceSize": "Normal",
+        "contentAlignment": "Center"
+      },
+      "onMouseOver": {
+        "card": "None",
+        "image": "Change image"
+      },
+      "elementsPositions": {
+        "skuSelector": "Bottom",
+        "favoriteIcon": "Top right"
+      }
+    },
+    "description": "The best selection for you",
+    "__resolveType": "deco-sites/technos/sections/Product/ProductShelf.tsx"
+  },
+  "Product Shelf - 05": {
+    "title": "What we're loving right now",
+    "layout": {
+      "headerfontSize": "Large",
+      "headerAlignment": "center"
+    },
+    "products": {
+      "props": {
+        "sort": "price:desc",
+        "count": 8,
+        "query": "Saia"
+      },
+      "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
+    },
+    "cardLayout": {
+      "hide": {
+        "cta": true,
+        "allPrices": false,
+        "skuSelector": true,
+        "installments": true,
+        "productDescription": true
+      },
+      "basics": {
+        "ctaText": "View more",
+        "oldPriceSize": "Normal",
+        "contentAlignment": "Center"
+      },
+      "onMouseOver": {
+        "card": "None",
+        "image": "Change image"
+      },
+      "elementsPositions": {
+        "skuSelector": "Bottom",
+        "favoriteIcon": "Top right"
+      }
+    },
+    "description": "The best selection for you",
+    "__resolveType": "deco-sites/technos/sections/Product/ProductShelf.tsx"
+  },
+  "Product Shelf - 06": {
+    "title": "What we're loving right now",
+    "layout": {
+      "headerfontSize": "Large",
+      "headerAlignment": "center"
+    },
+    "products": {
+      "props": {
+        "sort": "price:desc",
+        "count": 8,
+        "query": "Camisa"
+      },
+      "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
+    },
+    "cardLayout": {
+      "hide": {
+        "cta": true,
+        "allPrices": true,
+        "productName": true,
+        "skuSelector": true,
+        "installments": true,
+        "productDescription": true
+      },
+      "basics": {
+        "ctaText": "View more",
+        "oldPriceSize": "Normal",
+        "contentAlignment": "Center"
+      },
+      "onMouseOver": {
+        "card": "None",
+        "image": "Change image"
+      },
+      "elementsPositions": {
+        "skuSelector": "Bottom",
+        "favoriteIcon": "Top right"
+      }
+    },
+    "description": "The best selection for you",
+    "__resolveType": "deco-sites/technos/sections/Product/ProductShelf.tsx"
+  },
+  "Shoes - BannerGrid": {
+    "sections": [
+      {
+        "label": "BannerGrid",
+        "section": {
+          "banners": [
+            {
+              "alt": "Banner 1",
+              "href": "#",
+              "text": {
+                "color": "primary",
+                "title": "All White",
+                "badges": [
+                  {
+                    "color": "secondary",
+                    "title": "Lançamento",
+                    "textColor": "secondary"
+                  },
+                  {
+                    "color": "secondary",
+                    "title": "Branco",
+                    "textColor": "secondary"
+                  }
+                ],
+                "reverse": false,
+                "textButton": "Conferir",
+                "buttonColor": "secondary",
+                "verticalAlignment": "Bottom",
+                "horizontalAlignment": "Left"
+              },
+              "label": "All white",
+              "rowSpan": 2,
+              "rowStart": 1,
+              "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1310/93957d93-c662-4786-bc2d-135277bb6bf7",
+              "textColor": "secondary",
+              "srcDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1310/f3784a52-0072-4773-9f9d-6399d49512a7",
+              "buttonColor": "primary",
+              "columnStart": 1,
+              "backgroundColor": "secondary",
+              "buttonBackgroundColor": "success",
+              "hoveredButtonBackgroundColor": "secondary"
+            },
+            {
+              "alt": "Banner 2",
+              "href": "#",
+              "text": {
+                "title": "Casual",
+                "badges": [
+                  {
+                    "color": "secondary",
+                    "title": "Casual",
+                    "textColor": "secondary"
+                  },
+                  {
+                    "color": "secondary",
+                    "title": "Masculino",
+                    "textColor": "secondary"
+                  }
+                ],
+                "textButton": "Conferir",
+                "buttonColor": "secondary",
+                "verticalAlignment": "Bottom"
+              },
+              "label": "Casual",
+              "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1692/c68b19b6-5ae2-4b13-a004-29d5c10148d7",
+              "textColor": "secondary",
+              "srcDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1692/35e3d4a5-e1be-45cb-8ab2-463f71ebe3e2",
+              "backgroundColor": "primary"
+            },
+            {
+              "alt": "banner 3",
+              "href": "banner 3",
+              "text": {
+                "title": "Colorful",
+                "badges": [
+                  {
+                    "color": "secondary",
+                    "title": "Casual",
+                    "textColor": "secondary"
+                  },
+                  {
+                    "color": "secondary",
+                    "title": "Masculino",
+                    "textColor": "secondary"
+                  }
+                ],
+                "textButton": "Conferir",
+                "buttonColor": "secondary",
+                "verticalAlignment": "Bottom"
+              },
+              "label": "Colorful",
+              "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1310/8e0eb16e-a72f-45d1-b7e5-84260ba6cfb3",
+              "textColor": "secondary",
+              "srcDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1310/bea93e62-4b9d-48a6-bd52-15ccd10db2c3"
+            }
+          ],
+          "columnGap": {
+            "desktop": 4
+          },
+          "itemsColumn": {
+            "desktop": 2
+          },
+          "borderRadius": {
+            "mobile": "xl",
+            "desktop": "md"
+          },
+          "itemsPerLine": {
+            "desktop": 2
+          },
+          "__resolveType": "deco-sites/technos/sections/Images/BannerGrid.tsx",
+          "itemsPerColumn": {
+            "desktop": 2
+          },
+          "hoverBackgroundColor": "secondary"
+        },
+        "withContainer": true,
+        "backgroundColor": "#F7F7F7",
+        "verticalSpacing": "none"
+      }
+    ],
+    "__resolveType": "deco-sites/technos/sections/Container.tsx"
+  },
+  "categoryBreadcrumb": {
+    "sections": [
+      {
+        "label": "categoryBreadcrumb",
+        "section": {
+          "page": {
+            "sort": "price:desc",
+            "count": 1,
+            "fuzzy": "automatic",
+            "__resolveType": "deco-sites/std/loaders/vtex/intelligentSearch/productListingPage.ts",
+            "selectedFacets": []
+          },
+          "__resolveType": "deco-sites/technos/sections/Category/CategoryBreadcrumb.tsx"
+        },
+        "withContainer": true,
+        "verticalSpacing": "both"
+      }
+    ],
+    "__resolveType": "deco-sites/technos/sections/Container.tsx"
+  },
+  "Algolia Integration": {
+    "adminApiKey": {
+      "name": "ALGOLIA_ADMIN_API_KEY",
+      "encrypted": "6907fce3daa50f6821fd81da0cf4a3fc0f29f589a2b2f1d97f30bf2169250560eee6dc8e83c730202df34d29accee12f",
+      "__resolveType": "website/loaders/secret.ts"
+    },
+    "searchApiKey": "c1db0c388028afd574750a0f3abc911d",
+    "__resolveType": "decohub/apps/algolia.ts",
+    "applicationId": "3MINZHT36Y"
+  },
+  "Campaign Timer - 01": {
+    "link": {
+      "href": "https://github.com/deco-cx",
+      "text": "Visit our GitHub"
+    },
+    "text": "<p>Design, develop and deliver complete experiences</p>",
+    "labels": {
+      "expired": " "
+    },
+    "layout": {
+      "textPosition": "After counter"
+    },
+    "__resolveType": "deco-sites/technos/sections/Miscellaneous/CampaignTimer.tsx"
+  },
+  "Campaign Timer - 02": {
+    "link": {
+      "href": "/",
+      "text": "View products"
+    },
+    "text": "<p>15% discount on all products!</p>",
+    "labels": {
+      "hours": "hr",
+      "expired": "Promotion expired.",
+      "minutes": "min",
+      "seconds": "sec"
+    },
+    "layout": {
+      "textPosition": "After counter"
+    },
+    "expiresAt": "2023-06-07T00:00:00.000Z",
+    "__resolveType": "deco-sites/technos/sections/Miscellaneous/CampaignTimer.tsx"
+  },
+  "Cookie Consent - 01": {
+    "text": "<p>We use cookies to personalize ads and improve your experience on the site.</p>",
+    "title": "Cookies",
+    "layout": {
+      "content": "Piled up",
+      "position": "Expanded"
+    },
+    "policy": {
+      "link": "/",
+      "text": "Find out more about privacy policy"
+    },
+    "buttons": {
+      "allowText": "Accept",
+      "cancelText": "Close"
+    },
+    "__resolveType": "deco-sites/technos/sections/Miscellaneous/CookieConsent.tsx"
+  },
+  "Cookie Consent - 02": {
+    "text": "<p>We use cookies to personalize ads and improve your experience on the site.</p>",
+    "title": "Cookies",
+    "layout": {
+      "content": "Piled up",
+      "position": "Left"
+    },
+    "policy": {
+      "link": "/",
+      "text": "Find out more about privacy policy"
+    },
+    "buttons": {
+      "allowText": "Accept",
+      "cancelText": "Close"
+    },
+    "__resolveType": "deco-sites/technos/sections/Miscellaneous/CookieConsent.tsx"
+  },
+  "Cookie Consent - 03": {
+    "text": "<p>We use cookies to personalize ads and improve your experience on the site.</p>",
+    "title": "Cookies",
+    "layout": {
+      "content": "Tiled",
+      "position": "Right"
+    },
+    "policy": {
+      "link": "/",
+      "text": "Find out more about privacy policy"
+    },
+    "buttons": {
+      "allowText": "Accept",
+      "cancelText": "Close"
+    },
+    "__resolveType": "deco-sites/technos/sections/Miscellaneous/CookieConsent.tsx"
+  },
+  "Product Detail - 01": {
+    "page": {
+      "slug": "casaco-feminino-sun",
+      "__resolveType": "deco-sites/std/loaders/vtex/intelligentSearch/productDetailsPage.ts"
+    },
+    "variant": "slider",
+    "__resolveType": "deco-sites/technos/sections/Product/ProductDetails.tsx"
+  },
+  "vtex_proxy_audience": {
+    "name": "vtex_proxy",
+    "routes": {
+      "0": {
+        "handler": {
+          "value": {
+            "page": {
+              "__resolveType": "21500"
+            },
+            "__resolveType": "$live/handlers/fresh.ts"
+          }
+        },
+        "pathTemplate": "/"
+      },
+      "hostname": "fashion.bravtexstores.com.br",
+      "__resolveType": "deco-sites/std/loaders/vtex/proxy.ts"
+    },
+    "matcher": {
+      "__resolveType": "$live/matchers/MatchAlways.ts"
+    },
+    "overrides": [],
+    "__resolveType": "$live/flags/audience.ts"
+  },
+  "Category Banner - 01": {
+    "banners": [
+      {
+        "image": {
+          "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/91102b71-4832-486a-b683-5f7b06f649af",
+          "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/ec597b6a-dcf1-48ca-a99d-95b3c6304f96"
+        },
+        "title": "Woman",
+        "matcher": "/feminino/*",
+        "subtitle": "As"
+      },
+      {
+        "image": {
+          "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/91102b71-4832-486a-b683-5f7b06f649af",
+          "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/ec597b6a-dcf1-48ca-a99d-95b3c6304f96"
+        },
+        "title": "Woman",
+        "matcher": "/*",
+        "subtitle": "As"
+      }
+    ],
+    "__resolveType": "deco-sites/technos/sections/Category/CategoryBanner.tsx"
+  },
+  "Institutional Global": {
+    "sections": [
+      {
+        "label": "Institutional Global",
+        "section": {
+          "title": "Quem somos",
+          "content": {
+            "content": "<p>Hello! </p>",
+            "__resolveType": "deco-sites/technos/sections/Institutional/TextContent.tsx"
+          },
+          "pageType": "ACCORDION",
+          "asideMenu": {
+            "menuItems": [
+              {
+                "href": "#",
+                "label": "Menu item"
+              }
+            ],
+            "__resolveType": "deco-sites/technos/sections/Institutional/AsideMenu.tsx"
+          },
+          "accordions": [],
+          "__resolveType": "deco-sites/technos/sections/Institutional/InstitutionalPage.tsx"
+        },
+        "withContainer": false,
+        "verticalSpacing": "both"
+      }
+    ],
+    "__resolveType": "deco-sites/technos/sections/Container.tsx"
+  },
+  "Product Details - 01": {
+    "page": {
+      "slug": {
+        "param": "slug",
+        "__resolveType": "website/functions/requestToParam.ts"
+      },
+      "__resolveType": "vtex/loaders/intelligentSearch/productDetailsPage.ts"
+    },
+    "layout": {
+      "name": "concat",
+      "image": "front-back"
+    },
+    "__resolveType": "deco-sites/technos/sections/Product/ProductDetails.tsx"
+  },
+  "SearchResults Global": {
+    "sections": [
+      {
+        "label": "Search Results",
+        "section": {
+          "page": {
+            "sort": "price:desc",
+            "count": 3,
+            "fuzzy": "automatic",
+            "__resolveType": "deco-sites/std/loaders/vtex/intelligentSearch/productListingPage.ts",
+            "selectedFacets": []
+          },
+          "columns": {
+            "mobile": 1,
+            "desktop": 3
+          },
+          "variant": "aside",
+          "__resolveType": "deco-sites/technos/sections/Product/SearchResult.tsx",
+          "notFoundSection": {
+            "hints": {
+              "hints": [
+                "Verifique os termos digitados.",
+                "Tente utilizar uma única palavra.",
+                "Utilize termos genéricos na busca.",
+                "Procure utilizar sinônimos ao termo desejado."
+              ],
+              "title": "Confira algumas dicas para realizar sua busca:"
+            },
+            "__resolveType": "deco-sites/technos/sections/Miscellaneous/NotFound.tsx"
+          }
+        },
+        "withContainer": true,
+        "verticalSpacing": "both"
+      }
+    ],
+    "__resolveType": "deco-sites/technos/sections/Container.tsx"
+  },
+  "Camisas mais vendidas": {
+    "sort": "price:desc",
+    "count": 4,
+    "query": "camisa",
+    "__resolveType": "deco-sites/std/functions/vtexProductList.ts"
+  },
+  "Colecao 137 - Casacos": {
+    "ids": [],
+    "count": 10,
+    "collection": "137",
+    "__resolveType": "deco-sites/std/loaders/vtex/intelligentSearch/productList.ts",
+    "hideUnavailableItems": true
+  },
+  "Colecao 139 - Camisas": {
+    "ids": [],
+    "count": 10,
+    "collection": "139",
+    "__resolveType": "deco-sites/std/loaders/vtex/intelligentSearch/productList.ts",
+    "hideUnavailableItems": true
+  },
+  "Shoppable Banner - 01": {
+    "link": {
+      "href": "/feminino",
+      "text": "Take a look"
+    },
+    "pins": [
+      {
+        "link": "/feminino",
+        "label": "Glasses",
+        "mobile": {
+          "x": 12,
+          "y": 59
+        },
+        "desktop": {
+          "x": 7,
+          "y": 60
+        }
+      },
+      {
+        "link": "/feminino",
+        "label": "Bag",
+        "mobile": {
+          "x": 30,
+          "y": 30
+        },
+        "desktop": {
+          "x": 30,
+          "y": 30
+        }
+      }
+    ],
+    "text": "Introducing our stunning Spring Clothes Collection! Step into a world of vibrant colors, fresh designs, and delightful styles that capture the essence of the season. Embrace the blooming flowers and the gentle breeze with our carefully curated selection of springtime fashion.",
+    "image": {
+      "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/cc607cfa-b7b9-4f0e-b9af-579458d2fdc6",
+      "altText": "a",
+      "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/39d61abb-5b29-4de8-86e4-325d21d7fdb7"
+    },
+    "title": "Spring collection",
+    "__resolveType": "deco-sites/technos/sections/Images/ShoppableBanner.tsx"
+  },
+  "minha colecao boladona": {
+    "ids": [],
+    "count": 10,
+    "collection": "137",
+    "__resolveType": "deco-sites/std/loaders/vtex/intelligentSearch/productList.ts",
+    "hideUnavailableItems": true
+  },
+  "./routes/_middleware.ts": {
+    "state": [
+      {
+        "key": "configYourViews",
+        "value": {
+          "__resolveType": "configYourViews"
+        }
+      },
+      {
+        "key": "yourViews",
+        "value": {
+          "key": "asd",
+          "token": "men"
+        }
+      },
+      {
+        "key": "configVTEX",
+        "value": {
+          "__resolveType": "configVTEX"
+        }
+      },
+      {
+        "key": "configVNDA",
+        "value": {
+          "__resolveType": "configVNDA"
+        }
+      },
+      {
+        "key": "configShopify",
+        "value": {
+          "__resolveType": "configShopify"
+        }
+      },
+      {
+        "key": "configOCC",
+        "value": {
+          "__resolveType": "configOCC"
+        }
+      },
+      {
+        "key": "configButterCMS",
+        "value": {}
+      }
+    ],
+    "__resolveType": "$live/loaders/state.ts"
+  },
+  "Campaing Timer - Github": {
+    "link": {
+      "href": "https://github.com/deco-cx",
+      "text": "Visit our GitHub"
+    },
+    "text": "<p>Design, develop and deliver complete experiences</p>",
+    "labels": {
+      "expired": " "
+    },
+    "layout": {
+      "textPosition": "After counter"
+    },
+    "__resolveType": "deco-sites/technos/sections/Miscellaneous/CampaignTimer.tsx"
+  },
+  "Default - Design System": {
+    "fonts": {
+      "fontFamily": "'DM Sans'",
+      "styleInnerHtml": "/* latin-ext */ @font-face {   font-family: 'DM Sans';   font-style: italic;   font-weight: 400;   font-display: swap;   src: url(https://fonts.gstatic.com/s/dmsans/v13/rP2Fp2ywxg089UriCZa4ET-DJF4e8BH9.woff2) format('woff2');   unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; } /* latin */ @font-face {   font-family: 'DM Sans';   font-style: italic;   font-weight: 400;   font-display: swap;   src: url(https://fonts.gstatic.com/s/dmsans/v13/rP2Fp2ywxg089UriCZa4Hz-DJF4e8A.woff2) format('woff2');   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; } /* latin-ext */ @font-face {   font-family: 'DM Sans';   font-style: italic;   font-weight: 500;   font-display: swap;   src: url(https://fonts.gstatic.com/s/dmsans/v13/rP2Ap2ywxg089UriCZaw7ByWB3wT2iv06JOy.woff2) format('woff2');   unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; } /* latin */ @font-face {   font-family: 'DM Sans';   font-style: italic;   font-weight: 500;   font-display: swap;   src: url(https://fonts.gstatic.com/s/dmsans/v13/rP2Ap2ywxg089UriCZaw7ByWCXwT2iv06A.woff2) format('woff2');   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; } /* latin-ext */ @font-face {   font-family: 'DM Sans';   font-style: italic;   font-weight: 700;   font-display: swap;   src: url(https://fonts.gstatic.com/s/dmsans/v13/rP2Ap2ywxg089UriCZawpBqWB3wT2iv06JOy.woff2) format('woff2');   unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; } /* latin */ @font-face {   font-family: 'DM Sans';   font-style: italic;   font-weight: 700;   font-display: swap;   src: url(https://fonts.gstatic.com/s/dmsans/v13/rP2Ap2ywxg089UriCZawpBqWCXwT2iv06A.woff2) format('woff2');   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; } /* latin-ext */ @font-face {   font-family: 'DM Sans';   font-style: normal;   font-weight: 400;   font-display: swap;   src: url(https://fonts.gstatic.com/s/dmsans/v13/rP2Hp2ywxg089UriCZ2IHTWEBlwu8Q.woff2) format('woff2');   unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; } /* latin */ @font-face {   font-family: 'DM Sans';   font-style: normal;   font-weight: 400;   font-display: swap;   src: url(https://fonts.gstatic.com/s/dmsans/v13/rP2Hp2ywxg089UriCZOIHTWEBlw.woff2) format('woff2');   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; } /* latin-ext */ @font-face {   font-family: 'DM Sans';   font-style: normal;   font-weight: 500;   font-display: swap;   src: url(https://fonts.gstatic.com/s/dmsans/v13/rP2Cp2ywxg089UriAWCrCBamC3YU-CnE6Q.woff2) format('woff2');   unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; } /* latin */ @font-face {   font-family: 'DM Sans';   font-style: normal;   font-weight: 500;   font-display: swap;   src: url(https://fonts.gstatic.com/s/dmsans/v13/rP2Cp2ywxg089UriAWCrCBimC3YU-Ck.woff2) format('woff2');   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; } /* latin-ext */ @font-face {   font-family: 'DM Sans';   font-style: normal;   font-weight: 700;   font-display: swap;   src: url(https://fonts.gstatic.com/s/dmsans/v13/rP2Cp2ywxg089UriASitCBamC3YU-CnE6Q.woff2) format('woff2');   unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; } /* latin */ @font-face {   font-family: 'DM Sans';   font-style: normal;   font-weight: 700;   font-display: swap;   src: url(https://fonts.gstatic.com/s/dmsans/v13/rP2Cp2ywxg089UriASitCBimC3YU-Ck.woff2) format('woff2');   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }"
+    },
+    "colors": {
+      "info": "#ffffff",
+      "error": "#ed3238",
+      "accent": "#ffffff",
+      "neutral": "#8f8f9f",
+      "primary": "#25dac5",
+      "success": "#27ae5f",
+      "warning": "#e2b93b",
+      "base-100": "#ffffff",
+      "optional": {
+        "base-200": "#d2d1d7",
+        "base-300": "#8e8e9f",
+        "accent-focus": "#8f8f9f",
+        "base-content": "#1e0e62",
+        "info-content": "#2f1893",
+        "error-content": "#ffffff",
+        "primary-focus": "#482be7",
+        "accent-content": "#2f1893",
+        "primary-content": "#2f1893",
+        "secondary-focus": "#2f1893",
+        "success-content": "#ffffff",
+        "warning-content": "#ffffff",
+        "secondary-content": "#ffffff"
+      },
+      "secondary": "#482be7"
+    },
+    "__resolveType": "deco-sites/technos/sections/DesignSystem/DesignSystem.tsx",
+    "miscellaneous": {
+      "--border-btn": "1px",
+      "--tab-border": "1px",
+      "--tab-radius": "0.5rem",
+      "--rounded-box": "10px",
+      "--rounded-btn": "99rem",
+      "--animation-btn": "0.25s",
+      "--btn-text-case": "none",
+      "--rounded-badge": "1.9rem",
+      "--animation-input": "0.2s",
+      "--btn-focus-scale": "0.95"
+    }
+  },
+  "Sobre a loja - InfoCard": {
+    "sections": [
+      {
+        "label": "InfoCard",
+        "section": {
+          "html": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sollicitudin vitae urna, eu integer malesuada non urna, dui. At erat condimentum et id vitae varius. Scelerisque pellentesque suspendisse euismod ut nulla mauris a. Tellus laoreet non facilisis nibh dolor. Adipiscing cursus cras sit proin donec aliquet porttitor. Ornare amet scelerisque urna purus enim. Semper dictum massa viverra sit ligula morbi suspendisse.</p>",
+          "links": [],
+          "title": "Sobre a loja",
+          "caption": "AGÊNCIA N1",
+          "subTitle": "Sobre a loja",
+          "textAlign": "Center",
+          "__resolveType": "deco-sites/technos/sections/Content/InfoCard.tsx"
+        },
+        "spacing": 0,
+        "withContainer": true,
+        "verticalSpacing": "none"
+      }
+    ],
+    "__resolveType": "deco-sites/technos/sections/Container.tsx"
+  },
+  "pages-home-c4bcbfb771e9": {
+    "name": "Home",
+    "path": "/",
+    "sections": [
+      {
+        "noIndexing": false,
+        "__resolveType": "website/sections/Seo/Seo.tsx"
+      },
+      {
+        "__resolveType": "Header - 01"
+      },
+      {
+        "images": [
+          {
+            "alt": "/feminino",
+            "action": {
+              "href": "https://www.deco.cx/",
+              "label": "deco.cx",
+              "title": "VTEX Store",
+              "subTitle": "Visit our site and start building now:"
+            },
+            "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/24278f9e-412d-4a8a-b2d3-57353bb1b368",
+            "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/96e58473-71aa-4419-af42-7d1a3d66b1ae"
+          },
+          {
+            "alt": "/feminino",
+            "action": {
+              "href": "https://www.deco.cx/",
+              "label": "deco.cx",
+              "title": "VTEX Store",
+              "subTitle": "Visit our site and start building now:"
+            },
+            "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/eeaa624c-a3e1-45e8-a6fe-034233cfbcd0",
+            "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/7949d031-9a79-4639-b85e-62fd90af85a9"
+          },
+          {
+            "alt": "/feminino",
+            "action": {
+              "href": "https://www.deco.cx/",
+              "label": "deco.cx",
+              "title": "VTEX Store",
+              "subTitle": "Visit our site and start building now:"
+            },
+            "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/ae89571c-4a7c-44bf-9aeb-a341fd049d19",
+            "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/7ec121e4-5cfe-4b7b-b942-d1ed4493803d"
+          }
+        ],
+        "preload": true,
+        "__resolveType": "deco-sites/technos/sections/Images/Carousel.tsx"
+      },
+      {
+        "__resolveType": "Campaign Timer - 01"
+      },
+      {
+        "__resolveType": "Category List - 01"
+      },
+      {
+        "tabs": [
+          {
+            "title": "Woman",
+            "products": {
+              "props": {
+                "sort": "price:desc",
+                "count": 8,
+                "query": "vestido"
+              },
+              "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
+            }
+          },
+          {
+            "title": "Man",
+            "products": {
+              "props": {
+                "sort": "price:desc",
+                "count": 8,
+                "collection": "140"
+              },
+              "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
+            }
+          }
+        ],
+        "title": "Best Sellers",
+        "layout": {
+          "headerfontSize": "Large",
+          "headerAlignment": "center"
+        },
+        "cardLayout": {
+          "__resolveType": "Product Card Layout - 01"
+        },
+        "__resolveType": "deco-sites/technos/sections/Product/ProductShelfTabbed.tsx"
+      },
+      {
+        "__resolveType": "Shoppable Banner - 01"
+      },
+      {
+        "title": "Best Sellers",
+        "products": {
+          "props": {
+            "sort": "",
+            "count": 4,
+            "collection": "139"
+          },
+          "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
+        },
+        "cardLayout": {
+          "__resolveType": "Product Card Layout - 01"
+        },
+        "description": "Check these out!",
+        "__resolveType": "deco-sites/technos/sections/Product/ProductShelf.tsx"
+      },
+      {
+        "__resolveType": "Testimonials - 01"
+      },
+      {
+        "__resolveType": "Benefits - 01"
+      },
+      {
+        "__resolveType": "Logos - 01"
+      },
+      {
+        "__resolveType": "Newsletter - 01"
+      },
+      {
+        "__resolveType": "FAQ - 01"
+      },
+      {
+        "__resolveType": "Footer - 01"
+      }
+    ],
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "Product Card Layout - 01": {
+    "layout": {
+      "hide": {},
+      "show": {
+        "cta": true,
+        "allPrices": true,
+        "productName": true,
+        "skuSelector": true,
+        "installments": true,
+        "productDescription": true
+      },
+      "basics": {
+        "oldPriceSize": "Small",
+        "contentAlignment": "Left"
+      },
+      "onMouseOver": {
+        "card": "None",
+        "image": "Change image",
+        "showCta": true,
+        "showCardShadow": true,
+        "showSkuSelector": true,
+        "showFavoriteIcon": true
+      },
+      "elementsPositions": {
+        "skuSelector": "Top",
+        "favoriteIcon": "Top right"
+      },
+      "backgroundAndBorder": {
+        "shadow": "None",
+        "bgColor": "Transparent",
+        "borderColor": "Transparent",
+        "borderRadius": "None"
+      }
+    },
+    "products": {
+      "term": "a",
+      "count": 2,
+      "__resolveType": "vtex/loaders/legacy/productList.ts"
+    },
+    "__resolveType": "deco-sites/technos/loaders/Layouts/ProductCard.tsx"
+  },
+  "Categorias - ImageGallery": {
+    "sections": [
+      {
+        "label": "ImageGallery",
+        "section": {
+          "images": [
+            {
+              "alt": "Tenis",
+              "href": "/",
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1310/cca2c82d-fc1d-4329-876c-49ac52f4b031",
+              "title": "Tenis",
+              "preload": true
+            },
+            {
+              "alt": "T-hirts",
+              "href": "/",
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1310/d27b769f-3367-4f96-80bf-7a9fae47b69e",
+              "title": "T-shirts",
+              "preload": true
+            },
+            {
+              "alt": "Jeans",
+              "href": "/",
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1310/25c3c0db-a98d-49c7-b4a4-88d0edf70d90",
+              "title": "Jeans",
+              "preload": true
+            }
+          ],
+          "__resolveType": "deco-sites/technos/sections/Images/ImageGallery.tsx",
+          "maxItemsPerRow": "5",
+          "itemPerPageMobile": 1,
+          "itemPerPageDesktop": 3
+        },
+        "withContainer": true,
+        "verticalSpacing": "none"
+      }
+    ],
+    "__resolveType": "deco-sites/technos/sections/Container.tsx"
+  },
+  "Default - Product Details": {
+    "sections": [
+      {
+        "label": "ProductDetails",
+        "shadow": "none",
+        "section": {
+          "page": {
+            "slug": {
+              "0": "s",
+              "1": "l",
+              "2": "u",
+              "3": "g",
+              "param": "slug",
+              "__resolveType": "deco-sites/std/functions/requestToParam.ts"
+            },
+            "__resolveType": "deco-sites/std/loaders/vtex/intelligentSearch/productDetailsPage.ts"
+          },
+          "variant": "slider",
+          "__resolveType": "deco-sites/technos/sections/Product/ProductDetails.tsx",
+          "shipmentPolitics": {
+            "link": "#",
+            "label": "Confira nossa política de frete e entregas"
+          },
+          "shareableNetworks": [
+            "Facebook",
+            "Email"
+          ]
+        },
+        "spacing": 10,
+        "withContainer": true,
+        "verticalSpacing": "bottom"
+      }
+    ],
+    "__resolveType": "deco-sites/technos/sections/Container.tsx"
+  },
+  "pages-search-2f446eadce44": {
+    "name": "Search",
+    "path": "/s",
+    "sections": [
+      {
+        "type": "website",
+        "__resolveType": "website/sections/Seo/Seo.tsx",
+        "titleTemplate": "%s | Deco.cx",
+        "descriptionTemplate": "%s | Deco.cx"
+      },
+      {
+        "__resolveType": "Header - 01"
+      },
+      {
+        "page": {
+          "__resolveType": "Search Loader"
+        },
+        "layout": {
+          "columns": {
+            "mobile": 2,
+            "desktop": 4
+          },
+          "variant": "aside"
+        },
+        "__resolveType": "deco-sites/technos/sections/Product/SearchResult.tsx"
+      },
+      {
+        "__resolveType": "Footer - 01"
+      }
+    ],
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "./routes/[...catchall].tsx": {
+    "audiences": [
+      {
+        "__resolveType": "everyone"
+      },
+      {
+        "__resolveType": "everyone"
+      },
+      {
+        "__resolveType": "everyone"
+      },
+      {
+        "__resolveType": "vtex_proxy"
+      }
+    ],
+    "__resolveType": "$live/handlers/routesSelection.ts"
+  },
+  "pages-offline-b9c52de8c7b3": {
+    "name": "Offline",
+    "path": "/offline",
+    "sections": [
+      {
+        "__resolveType": "Header - 01"
+      },
+      {
+        "title": "Oh no! You are offline!",
+        "products": {
+          "ids": [],
+          "sort": "price:desc",
+          "count": 4,
+          "collection": "139",
+          "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
+        },
+        "cardLayout": {
+          "__resolveType": "Product Card Layout - 01"
+        },
+        "description": "Maybe take some time to explore",
+        "__resolveType": "deco-sites/technos/sections/Product/ProductShelf.tsx"
+      },
+      {
+        "__resolveType": "Footer - 01"
+      }
+    ],
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "pages-category-7493d4326022": {
+    "name": "Category",
+    "path": "/*",
+    "sections": [
+      {
+        "jsonLD": {
+          "__resolveType": "PLP Loader"
+        },
+        "__resolveType": "commerce/sections/Seo/SeoPLP.tsx"
+      },
+      {
+        "__resolveType": "Header - 01"
+      },
+      {
+        "page": {
+          "__resolveType": "PLP Loader"
+        },
+        "layout": {
+          "columns": {
+            "mobile": 2,
+            "desktop": 4
+          },
+          "variant": "aside",
+          "pagination": "show-more"
+        },
+        "cardLayout": {
+          "__resolveType": "Product Card Layout - 01"
+        },
+        "startingPage": 1,
+        "__resolveType": "deco-sites/technos/sections/Product/SearchResult.tsx"
+      },
+      {
+        "__resolveType": "Footer - 01"
+      }
+    ],
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "Product Details - Gallery Grid": {
+    "children": {
+      "children": {
+        "page": {
+          "slug": "/camiseta-pure/p?skuId=26",
+          "__resolveType": "vtex/loaders/intelligentSearch/productDetailsPage.ts"
+        },
+        "children": {
+          "layout": {
+            "gap": {
+              "mobile": "2",
+              "desktop": "2"
+            },
+            "cols": {
+              "mobile": "1",
+              "desktop": "2"
+            },
+            "flow": {
+              "mobile": "row-dense",
+              "desktop": "row"
+            },
+            "rows": {
+              "mobile": "none",
+              "desktop": "1"
+            },
+            "placeItems": {
+              "mobile": "center",
+              "desktop": "start"
+            }
+          },
+          "children": {
+            "0": {},
+            "sections": [
+              {
+                "children": {
+                  "page": {
+                    "__resolveType": "PDP Loader"
+                  },
+                  "layout": {
+                    "image": "two",
+                    "width": 1000,
+                    "height": 1000,
+                    "onMouseOver": {
+                      "image": "Disable"
+                    }
+                  },
+                  "__resolveType": "deco-sites/technos/sections/Product/imageGalleryGrid.tsx"
+                },
+                "__resolveType": "deco-sites/technos/sections/Layout/GridItem.tsx"
+              },
+              {
+                "layout": {
+                  "colSpan": {
+                    "mobile": "1",
+                    "desktop": "1"
+                  },
+                  "rowSpan": {
+                    "mobile": "1",
+                    "desktop": "full"
+                  },
+                  "colStart": {
+                    "mobile": "1",
+                    "desktop": "auto"
+                  },
+                  "rowStart": {
+                    "desktop": "1"
+                  }
+                },
+                "children": {
+                  "page": {
+                    "__resolveType": "PDP Loader"
+                  },
+                  "layout": {
+                    "name": "concat"
+                  },
+                  "__resolveType": "deco-sites/technos/sections/Product/ProductInfo.tsx"
+                },
+                "__resolveType": "deco-sites/technos/sections/Layout/GridItem.tsx"
+              }
+            ],
+            "__resolveType": "deco-sites/technos/loaders/List/Sections.tsx"
+          },
+          "__resolveType": "deco-sites/technos/sections/Layout/Grid.tsx"
+        },
+        "fallback": {
+          "__resolveType": "deco-sites/technos/sections/Product/NotFound.tsx"
+        },
+        "__resolveType": "deco-sites/technos/sections/Product/NotFoundChallenge.tsx"
+      },
+      "__resolveType": "deco-sites/technos/sections/Layout/Container.tsx"
+    },
+    "__resolveType": "deco-sites/technos/sections/Gallery.tsx"
+  },
+  "pages-partialhome-4fa9d10c5f3c": {
+    "name": "Partial Home",
+    "path": "/home-partial",
+    "sections": [
+      {
+        "__resolveType": "website/sections/Seo/Seo.tsx"
+      },
+      {
+        "__resolveType": "Header - 01"
+      },
+      {
+        "__resolveType": "Carousel - 01"
+      },
+      {
+        "__resolveType": "Campaign Timer - 01"
+      },
+      {
+        "__resolveType": "Category List - 01"
+      },
+      {
+        "sections": [
+          {
+            "__resolveType": "Shoppable Banner - 01"
+          },
+          {
+            "title": "Best Sellers",
+            "products": {
+              "props": {
+                "sort": "",
+                "count": 4,
+                "collection": "139"
+              },
+              "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
+            },
+            "cardLayout": {
+              "__resolveType": "Product Card Layout - 01"
+            },
+            "description": "Check these out!",
+            "__resolveType": "deco-sites/technos/sections/Product/ProductShelf.tsx"
+          },
+          {
+            "__resolveType": "Testimonials - 01"
+          },
+          {
+            "__resolveType": "Benefits - 01"
+          },
+          {
+            "__resolveType": "Logos - 01"
+          },
+          {
+            "__resolveType": "Newsletter - 01"
+          },
+          {
+            "__resolveType": "FAQ - 01"
+          }
+        ],
+        "__resolveType": "website/sections/Rendering/Deferred.tsx"
+      },
+      {
+        "__resolveType": "Footer - 01"
+      }
+    ],
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "pages-productpage-ce4850591828": {
+    "name": "Product Page",
+    "path": "/:slug/p",
+    "sections": [
+      {
+        "jsonLD": {
+          "__resolveType": "PDP Loader"
+        },
+        "jsonLDs": [
+          {}
+        ],
+        "__resolveType": "commerce/sections/Seo/SeoPDP.tsx"
+      },
+      {
+        "__resolveType": "Header - 01"
+      },
+      {
+        "__resolveType": "Product Details - Gallery Slider "
+      },
+      {
+        "variants": [
+          {
+            "rule": {
+              "__resolveType": "website/matchers/always.ts"
+            },
+            "value": {
+              "title": "You may also like",
+              "products": {
+                "slug": {
+                  "param": "slug",
+                  "__resolveType": "website/functions/requestToParam.ts"
+                },
+                "count": 4,
+                "crossSelling": "whosawalsosaw",
+                "__resolveType": "vtex/loaders/legacy/relatedProductsLoader.ts"
+              },
+              "cardLayout": {
+                "__resolveType": "Product Card Layout - 01"
+              },
+              "__resolveType": "deco-sites/technos/sections/Product/ProductShelf.tsx"
+            }
+          },
+          {
+            "rule": {
+              "__resolveType": "website/matchers/always.ts"
+            },
+            "value": {
+              "title": "You may also like",
+              "products": {
+                "slug": {
+                  "param": "slug",
+                  "__resolveType": "website/functions/requestToParam.ts"
+                },
+                "count": 4,
+                "crossSelling": "whosawalsosaw",
+                "__resolveType": "vtex/loaders/legacy/relatedProductsLoader.ts"
+              },
+              "cardLayout": {
+                "__resolveType": "Product Card Layout - 01"
+              },
+              "__resolveType": "deco-sites/technos/sections/Product/ProductShelf.tsx"
+            }
+          }
+        ],
+        "__resolveType": "website/flags/multivariate/section.ts"
+      },
+      {
+        "__resolveType": "Footer - 01"
+      }
+    ],
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "Os mais vendidos - ProductShelf": {
+    "sections": [
+      {
+        "label": "ProductShelf",
+        "section": {
+          "title": "Você vai curtir também",
+          "layout": {
+            "itemsPerPage": [
+              {
+                "screenWidth": 425,
+                "itemsQuantity": 2
+              },
+              {
+                "screenWidth": 786,
+                "itemsQuantity": 3
+              },
+              {
+                "screenWidth": 1170,
+                "itemsQuantity": 4
+              },
+              {
+                "screenWidth": 1440,
+                "itemsQuantity": 5
+              }
+            ],
+            "headerAlignment": "center"
+          },
+          "seeMore": {
+            "url": "#",
+            "label": "+ ver mais"
+          },
+          "products": {
+            "ids": [],
+            "count": 10,
+            "collection": "160",
+            "__resolveType": "deco-sites/std/loaders/vtex/intelligentSearch/productList.ts"
+          },
+          "cardLayout": {
+            "hide": {
+              "skuSelector": true,
+              "productDescription": true
+            },
+            "basics": {
+              "ctaMode": "Add to Cart",
+              "ctaText": "Adicionar ao carrinho",
+              "mobileCtaText": "Adicionar ao carrinho",
+              "contentAlignment": "Center"
+            },
+            "discount": {
+              "label": "off",
+              "variant": "emphasis"
+            },
+            "onMouseOver": {
+              "showCta": true
+            },
+            "elementsPositions": {}
+          },
+          "__resolveType": "deco-sites/technos/sections/Product/ProductShelf.tsx",
+          "showPaginationArrows": "Always"
+        },
+        "withContainer": true,
+        "verticalSpacing": "none"
+      }
+    ],
+    "__resolveType": "deco-sites/technos/sections/Container.tsx"
+  },
+  "Product Details - Gallery Slider ": {
+    "children": {
+      "children": {
+        "page": {
+          "__resolveType": "PDP Loader"
+        },
+        "children": {
+          "layout": {
+            "gap": {
+              "mobile": "2",
+              "desktop": "4"
+            },
+            "cols": {
+              "mobile": "1",
+              "desktop": "none"
+            },
+            "flow": {
+              "mobile": "row",
+              "desktop": "col"
+            },
+            "rows": {},
+            "placeItems": {
+              "mobile": "center",
+              "desktop": "center"
+            }
+          },
+          "children": {
+            "sections": [
+              {
+                "children": {
+                  "page": {
+                    "__resolveType": "PDP Loader"
+                  },
+                  "layout": {
+                    "width": 300,
+                    "height": 370
+                  },
+                  "__resolveType": "deco-sites/technos/sections/Product/ImageGallerySlider.tsx"
+                },
+                "__resolveType": "deco-sites/technos/sections/Layout/GridItem.tsx"
+              },
+              {
+                "children": {
+                  "page": {
+                    "__resolveType": "PDP Loader"
+                  },
+                  "layout": {
+                    "name": "product"
+                  },
+                  "__resolveType": "deco-sites/technos/sections/Product/ProductInfo.tsx"
+                },
+                "__resolveType": "deco-sites/technos/sections/Layout/GridItem.tsx"
+              }
+            ],
+            "__resolveType": "deco-sites/technos/loaders/List/Sections.tsx"
+          },
+          "__resolveType": "deco-sites/technos/sections/Layout/Grid.tsx"
+        },
+        "fallback": {
+          "__resolveType": "deco-sites/technos/sections/Product/NotFound.tsx"
+        },
+        "__resolveType": "deco-sites/technos/sections/Product/NotFoundChallenge.tsx"
+      },
+      "__resolveType": "deco-sites/technos/sections/Layout/Container.tsx"
+    },
+    "__resolveType": "deco-sites/technos/sections/Gallery.tsx"
+  },
+  "Product Details - Gallery FullWidth": {
+    "children": {
+      "children": {
+        "page": {
+          "__resolveType": "PDP Loader"
+        },
+        "children": {
+          "layout": {
+            "gap": {
+              "mobile": "1",
+              "desktop": "1"
+            },
+            "wrap": {
+              "mobile": "wrap",
+              "desktop": "wrap"
+            },
+            "justify": {
+              "mobile": "center",
+              "desktop": "center"
+            },
+            "direction": {
+              "mobile": "row",
+              "desktop": "row"
+            }
+          },
+          "children": {
+            "sections": [
+              {
+                "page": {
+                  "__resolveType": "PDP Loader"
+                },
+                "layout": {
+                  "width": 1000,
+                  "height": 1000,
+                  "onMouseOver": {
+                    "imageZoom": "Disable"
+                  }
+                },
+                "__resolveType": "deco-sites/technos/sections/Product/ImageGalleryFullWidth.tsx"
+              }
+            ],
+            "__resolveType": "deco-sites/technos/loaders/List/Sections.tsx"
+          },
+          "__resolveType": "deco-sites/technos/sections/Layout/Flex.tsx"
+        },
+        "fallback": {
+          "__resolveType": "deco-sites/technos/sections/Product/NotFound.tsx"
+        },
+        "__resolveType": "deco-sites/technos/sections/Product/NotFoundChallenge.tsx"
+      },
+      "__resolveType": "deco-sites/technos/sections/Layout/Container.tsx"
+    },
+    "__resolveType": "deco-sites/technos/sections/Gallery.tsx"
+  },
+  "Produtos relacionados - ProductShelf": {
+    "sections": [
+      {
+        "label": "ProductShelf",
+        "section": {
+          "title": "Os mais vendidos",
+          "layout": {
+            "itemsPerPage": [
+              {
+                "screenWidth": 425,
+                "itemsQuantity": 2
+              },
+              {
+                "screenWidth": 786,
+                "itemsQuantity": 3
+              },
+              {
+                "screenWidth": 1170,
+                "itemsQuantity": 4
+              },
+              {
+                "screenWidth": 1440,
+                "itemsQuantity": 5
+              }
+            ],
+            "headerAlignment": "center"
+          },
+          "seeMore": {
+            "url": "#",
+            "label": "+ ver mais"
+          },
+          "products": {
+            "slug": {
+              "param": "slug",
+              "__resolveType": "deco-sites/std/functions/requestToParam.ts"
+            },
+            "count": 10,
+            "crossSelling": "whosawalsosaw",
+            "__resolveType": "deco-sites/std/loaders/vtex/legacy/relatedProductsLoader.ts"
+          },
+          "cardLayout": {
+            "hide": {
+              "skuSelector": true,
+              "productDescription": true
+            },
+            "basics": {
+              "ctaMode": "Add to Cart",
+              "ctaText": "Adicionar ao carrinho",
+              "mobileCtaText": "Adicionar ao carrinho",
+              "contentAlignment": "Center"
+            },
+            "discount": {
+              "label": "off",
+              "variant": "emphasis"
+            },
+            "onMouseOver": {
+              "showCta": true
+            },
+            "elementsPositions": {}
+          },
+          "__resolveType": "deco-sites/technos/sections/Product/ProductShelf.tsx",
+          "showPaginationArrows": "Always"
+        },
+        "withContainer": true,
+        "verticalSpacing": "none"
+      }
+    ],
+    "__resolveType": "deco-sites/technos/sections/Container.tsx"
+  },
+  "pages-institutionalpage-ca2f3c8031d8": {
+    "name": "Institutional page (Text)",
+    "path": "/institucional/text",
+    "sections": [
+      {
+        "__resolveType": "SEODefault"
+      },
+      {
+        "__resolveType": "Default - Design System"
+      },
+      {
+        "__resolveType": "Header Global"
+      },
+      {
+        "sections": [
+          {
+            "label": "Institutional Page",
+            "section": {
+              "title": "Política de Privacidade",
+              "content": {
+                "content": "<p>A política de privacidade serve para explicar como os seus dados e informações são tratados, armazenados e manipulados no site.</p><p><br></p><p><strong>Segurança</strong></p><p><br></p><p>1. Todos os dados postados em nosso formulário de cadastro e nas páginas de pagamento são transmitidos em modo de segurança (SSL – Secure Socket Layer) onde todas as informações são criptografadas e apenas o nosso servidor pode interpretá-las.</p><p><br></p><p>2. As informações do seu cadastro são criptografadas com chave de 128 bits e armazenadas de modo seguro.</p><p><br></p><p>3. Todas as transações de pagamento, com cartão de crédito ou não, são executadas com a tecnologia SSL (Secure Socket Layer), garantindo que todos os dados, tais como, endereço de entrega, dados de cartão de crédito e histórico de pedidos, jamais sejam divulgados. Além disso, essa tecnologia visa impedir que as informações sejam transmitidas ou acessadas por terceiros.</p><p><br></p><p>4. Seu login e senha são importantes para manter seus dados em absoluto sigilo. Por isso, não forneça para outras pessoas, mesmo que sejam amigos ou parentes. Nenhum funcionário da Fashion Store tem acesso às senhas dos usuários cadastrados. Além disso, não enviamos emails com solicitação de informações pessoais, senhas, dados de pagamento ou mesmo solicitando download e execução de arquivos.</p><p><br></p><p>5. É muito importante que o cliente proteja suas informações contra acesso não autorizado ao seu computador, conta ou senha. O cliente deve certificar-se de sempre clicar em “sair” ao encerrar sua navegação em um computador compartilhado.</p><p><br></p><p>6. Procure não utilizar senhas óbvias, como sequência de números e letras (ex: abc123, 123456, abcd e etc.), troque sua senha regularmente e nunca compartilhe com terceiros.</p><p><br></p><p>7. Use somente programas e sistemas originais e os mantenha sempre atualizados, principalmente as correções de segurança do sistema operacional do seu dispositivo como também os programas de antivírus e anti-malware, esses programa são indispensáveis para sua segurança digital.</p><p><br></p><p><strong>Privacidade</strong></p><p><br></p><p>1. AgênciaN1 Store tem o compromisso de manter sua privacidade, garantindo que seus dados cadastrais não sejam compartilhados com terceiros não autorizados e não envolvidos nos processos de análise de compra, cobrança, entrega, navegação e campanhas promocionais.</p><p><br></p><p>2. Utilizaremos, com sua prévia autorização, o seu endereço de email para informar sobre novidades, lançamentos e promoções da AgênciaN1 Store.</p><p><br></p><p>3. Você poderá sempre administrar as suas informações cadastrais clicando na opção “Minha Conta”. Nesta seção você poderá atualizar os seus dados cadastrais, mudar sua senha e acompanhar de perto o histórico das suas compras na nossa loja.</p><p><br></p><p>Em caso de dúvidas, entre em contato pelo email contato@agêncian1.com.br ou telefone (21) 2222-2222.</p>",
+                "__resolveType": "deco-sites/technos/sections/Institutional/TextContent.tsx"
+              },
+              "asideMenu": {
+                "__resolveType": "Aside Menu Global"
+              },
+              "__resolveType": "deco-sites/technos/sections/Institutional/InstitutionalPage.tsx"
+            },
+            "withContainer": true,
+            "verticalSpacing": "both"
+          }
+        ],
+        "__resolveType": "deco-sites/technos/sections/Container.tsx"
+      },
+      {
+        "__resolveType": "Footer Global"
+      }
+    ],
+    "__resolveType": "$live/pages/LivePage.tsx"
+  },
+  "Nossas redes sociais - InfoCard/ImageGallery": {
+    "sections": [
+      {
+        "label": "InfoCard",
+        "section": {
+          "links": [
+            {
+              "href": "https://www.instagram.com/agencian1/",
+              "icon": "Instagram",
+              "label": "Instagram"
+            },
+            {
+              "href": "https://www.facebook.com/",
+              "icon": "Facebook",
+              "label": "Facebook"
+            },
+            {
+              "href": "https://youtube.com/",
+              "icon": "YouTube",
+              "label": "Youtube"
+            }
+          ],
+          "title": "Nossas redes sociais",
+          "__resolveType": "deco-sites/technos/sections/Content/InfoCard.tsx"
+        },
+        "withContainer": true,
+        "verticalSpacing": "none"
+      },
+      {
+        "label": "ImageGallery",
+        "section": {
+          "images": [
+            {
+              "alt": "imagem social",
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1310/a625a3ef-27f5-4549-844e-24ee939271c8",
+              "preload": true
+            },
+            {
+              "alt": "imagem social",
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1310/66e02f8a-b7e7-419a-8222-4a00eb0dd33a"
+            },
+            {
+              "alt": "imagem social",
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1310/66e02f8a-b7e7-419a-8222-4a00eb0dd33a"
+            }
+          ],
+          "__resolveType": "deco-sites/technos/sections/Images/ImageGallery.tsx",
+          "itemPerPageMobile": 1,
+          "itemPerPageDesktop": 3
+        },
+        "withContainer": true,
+        "verticalSpacing": "none",
+        "itemPerPageMobile": 1,
+        "itemPerPageDesktop": 3
+      }
+    ],
+    "__resolveType": "deco-sites/technos/sections/Container.tsx"
+  },
+  "pages-institutionalpage (cards)-434d5fe5d4f5": {
+    "name": "Institutional page (Cards)",
+    "path": "/institucional/cards",
+    "sections": [
+      {
+        "__resolveType": "SEODefault"
+      },
+      {
+        "__resolveType": "Default - Design System"
+      },
+      {
+        "__resolveType": "Header Global"
+      },
+      {
+        "sections": [
+          {
+            "label": "Institutional Page",
+            "section": {
+              "title": "Nossas Lojas",
+              "content": {
+                "cards": [
+                  {
+                    "links": [
+                      {
+                        "url": "#",
+                        "label": "(21) 2222-2222"
+                      },
+                      {
+                        "url": "#",
+                        "icon": "Instagram",
+                        "label": "@instagram"
+                      }
+                    ],
+                    "content": {
+                      "text": "text content",
+                      "subtitle": "Nível superior",
+                      "paragraphs": [
+                        "Av. das Américas, 4666 5Loja 99 – 99º Piso",
+                        "Barra da Tijuca, Rio de Janeiro - RJ, 22640-102"
+                      ]
+                    },
+                    "heading": {
+                      "title": "Shopping"
+                    }
+                  },
+                  {
+                    "links": [
+                      {
+                        "url": "#",
+                        "label": "(21) 2222-2222"
+                      },
+                      {
+                        "url": "#",
+                        "icon": "Instagram",
+                        "label": "@instagram"
+                      }
+                    ],
+                    "content": {
+                      "text": "text content",
+                      "subtitle": "Nível superior",
+                      "paragraphs": [
+                        "Av. das Américas, 4666 5Loja 99 – 99º Piso",
+                        "Barra da Tijuca, Rio de Janeiro - RJ, 22640-102"
+                      ]
+                    },
+                    "heading": {
+                      "title": "Shopping"
+                    }
+                  },
+                  {
+                    "links": [
+                      {
+                        "url": "#",
+                        "label": "(21) 2222-2222"
+                      },
+                      {
+                        "url": "#",
+                        "icon": "Instagram",
+                        "label": "@instagram"
+                      }
+                    ],
+                    "content": {
+                      "text": "text content",
+                      "subtitle": "Nível superior",
+                      "paragraphs": [
+                        "Av. das Américas, 4666 5Loja 99 – 99º Piso",
+                        "Barra da Tijuca, Rio de Janeiro - RJ, 22640-102"
+                      ]
+                    },
+                    "heading": {
+                      "title": "Shopping"
+                    }
+                  },
+                  {
+                    "links": [
+                      {
+                        "url": "#",
+                        "label": "(21) 2222-2222"
+                      },
+                      {
+                        "url": "#",
+                        "icon": "Instagram",
+                        "label": "@instagram"
+                      }
+                    ],
+                    "content": {
+                      "text": "text content",
+                      "subtitle": "Nível superior",
+                      "paragraphs": [
+                        "Av. das Américas, 4666 5Loja 99 – 99º Piso",
+                        "Barra da Tijuca, Rio de Janeiro - RJ, 22640-102"
+                      ]
+                    },
+                    "heading": {
+                      "title": "Shopping"
+                    }
+                  },
+                  {
+                    "links": [
+                      {
+                        "url": "#",
+                        "label": "(21) 2222-2222"
+                      },
+                      {
+                        "url": "#",
+                        "icon": "Instagram",
+                        "label": "@instagram"
+                      }
+                    ],
+                    "content": {
+                      "text": "text content",
+                      "subtitle": "Nível superior",
+                      "paragraphs": [
+                        "Av. das Américas, 4666 5Loja 99 – 99º Piso",
+                        "Barra da Tijuca, Rio de Janeiro - RJ, 22640-102"
+                      ]
+                    },
+                    "heading": {
+                      "title": "Shopping"
+                    }
+                  },
+                  {
+                    "links": [
+                      {
+                        "url": "#",
+                        "label": "(21) 2222-2222"
+                      },
+                      {
+                        "url": "#",
+                        "icon": "Instagram",
+                        "label": "@instagram"
+                      }
+                    ],
+                    "content": {
+                      "text": "text content",
+                      "subtitle": "Nível superior",
+                      "paragraphs": [
+                        "Av. das Américas, 4666 5Loja 99 – 99º Piso",
+                        "Barra da Tijuca, Rio de Janeiro - RJ, 22640-102"
+                      ]
+                    },
+                    "heading": {
+                      "title": "Shopping"
+                    }
+                  }
+                ],
+                "__resolveType": "deco-sites/technos/sections/Institutional/CardsContent.tsx"
+              },
+              "asideMenu": {
+                "__resolveType": "Aside Menu Global"
+              },
+              "__resolveType": "deco-sites/technos/sections/Institutional/InstitutionalPage.tsx"
+            },
+            "withContainer": true,
+            "verticalSpacing": "both"
+          }
+        ],
+        "__resolveType": "deco-sites/technos/sections/Container.tsx"
+      },
+      {
+        "__resolveType": "Footer Global"
+      }
+    ],
+    "__resolveType": "$live/pages/LivePage.tsx"
+  },
+  "pages-institutionalpage (contact)-efacfbb1b145": {
+    "name": "Institutional page (Contact)",
+    "path": "/institucional/contact",
+    "sections": [
+      {
+        "__resolveType": "SEODefault"
+      },
+      {
+        "__resolveType": "Default - Design System"
+      },
+      {
+        "__resolveType": "Header Global"
+      },
+      {
+        "sections": [
+          {
+            "label": "Institutional Page",
+            "section": {
+              "title": "Política de Privacidade",
+              "content": {
+                "alt": "Logo agencia n1 com tenis de fundo",
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1692/e698960d-d5c3-46d3-959e-a901bd2d4187",
+                "__resolveType": "deco-sites/technos/sections/Institutional/ContactForm.tsx"
+              },
+              "asideMenu": {
+                "__resolveType": "Aside Menu Global"
+              },
+              "__resolveType": "deco-sites/technos/sections/Institutional/InstitutionalPage.tsx"
+            },
+            "withContainer": true,
+            "verticalSpacing": "both"
+          }
+        ],
+        "__resolveType": "deco-sites/technos/sections/Container.tsx"
+      },
+      {
+        "__resolveType": "Footer Global"
+      }
+    ],
+    "__resolveType": "$live/pages/LivePage.tsx"
+  },
+  "pages-institutionalpage (accordion)-e8b3777c6dac": {
+    "name": "Institutional page (Accordion)",
+    "path": "/institucional/accordion",
+    "sections": [
+      {
+        "__resolveType": "SEODefault"
+      },
+      {
+        "__resolveType": "Default - Design System"
+      },
+      {
+        "__resolveType": "Header Global"
+      },
+      {
+        "sections": [
+          {
+            "label": "Institutional Page",
+            "section": {
+              "title": "Perguntas Frequentes",
+              "content": {
+                "accordions": [
+                  {
+                    "label": "Quais as formas de pagamento?",
+                    "content": "<p>Aceitamos como forma de pagamento parcelado os Cartões de Crédito Visa, Mastercard e Elo. Também Boleto Bancário e Pix para pagamentos à vista.</p><p><br></p><p>*O prazo para aprovação dos pedidos realizados com cartão é de até 72h</p><p><br></p><p><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARcAAAAkCAYAAACjSn5jAAAABHNCSVQICAgIfAhkiAAAABl0RVh0U29mdHdhcmUAZ25vbWUtc2NyZWVuc2hvdO8Dvz4AAAAmdEVYdENyZWF0aW9uIFRpbWUAdGVyIDA0IGp1bCAyMDIzIDIyOjM1OjE3vORWMAAAEU1JREFUeJztnXt0VPWdwD+TeRI0MzxC1OYxWEFBkEBoDbCQhIrgA0nQ7ur6SFIVu241gdXTU6kmkdZTtTVhcatSbBIL2lZoElkV8KwMUB71CAkoQQE3kwQfENCZWZPMIzOzf1zunUwmmbk3mcAI8zlnzrn39/je53zv9/v9vVR+v99PnDhx4kSZhPN9AnHixLkwiSuXOHHiDAua3js+n4/u7m68Xi+x5i0lJCSg0+nQ6/WK63o8HjweDz6fbxjObGgkJCSg1WrRarWK6vn9fum6Yu1ZqVQq1Go1er0elUqlqK7P58PlcuHz+WLyurRaLTqdTnFdj8eD2+2OuWsCUKvV6HQ61Gp1VOWqxJiLz+fj22+/lf7ASl+K4cbn8+F0OvH7/YwcOVJ2PbfbjcfjwWAwRP3mRQOv14vT6USn0ylSMJ2dnWg0GnQ6Xcw9q96KLzExUfb5iR83nU6HRqOJuevy+Xy43W4ADAaD7Hput5uenh70en1MvoOi4tPr9Wg0msgVZCK5Rd3d3ej1egwGQ8w9VBC+8ImJiYBwM+QgvgyJiYkx+VBB+GqMGDFC0VfN4/EM2jI4F6hUKklZin9GOfRWsrF4XQkJCej1erxeL16vV1Ydn8+Hx+NhxIgRMfsOarVaDAYDLpcrqnIl5dLT0zMoc+9co9Fo6OnpkVXW5/PF5BewLwkJCahUKtnKpaenJ6pfmOFCybPy+/34/X7F7uG5RqVSodFoZCsXr9eLWq2O+XdQVHzRdNuC3tBYvwGg7Bxj0b8dCCXKRSx/IfFde1Zy8fv9JCQM3G6yevVqbDabtJ+Tk0Nubu5QTi8Iq9VKbW1tUFphYSFmszlqxxiIwX3+vrbDmg1Qvgn4B9B5NmMqzM6GJ++DRf8UKO9xgPV1OLkDzuwExxdC+tiZMGYmpN0Gl980lOuIE+c7h9VqpbS0lKKiIilt2rRpw3IcEYvFgslkoqSkJOrH6YsU0LXb7RiNxsg1Kn4P5f8uQ/RUOPY2aP4OH/wrRHLnktJgwW5ITAtbzO124/V6GTFiRMQz8Hg8eL1eRcG384UYyJTjlyspez4RA7RyAvBKyp5vxDiSnDBCuLJWq5Xx48efU6utuLgYs9lMWVlZSF5nZ6eiAHwklPVzmbNMpmIB+AgmpMNfZCgWAEc7bEqHYy8rOqU4ceLEJvKVy49/Dnv+oEz6IsACnFZQZ9+/Qdsbyo4TR8LFI7hQST8nP8RN9fk+rTgRaGpqYvXq1QDU1tZis9moqKigoqIiZNtisWC1WqX9pqYmmpqaqK+vp6KigtraWilfjLfU19ef82uS5xat2QCP3qNM8qJe20nAQkBuQ4AeuLWtXxdpsG6R3d7Jxj/tZGvdgaAyk7PSKX/u3qC0rW9/yKsvbAUg9cpkXvjDMv7jwbW0/28HAGUv3MO10zIA2LvrCBtf28W+rc2cbBe06ITpGSy4fQYrVt4uybTbO3n6sQ2SDFGuyFDcomOdXiaMFLZdPAWsCqnjB7S0oMYcUX5/WK1WLBYLubm5soOBsewWtbq7MR8/gH/yHMV1o+UWgXBfzWYzNTU1VFRU0NLSQm5uLjU1NYwfPx6AlpaWoO3a2lpycnLIy8ujpaUFi8WCSqXCYrFQU1NDbm4uZWVl5OXlkZuby/bt2ykuLqa6uloKHptMppBzOT9u0aMPKZM6vc++AzimoL4L+PgZZceMgNE4kvt/dhMv/HEZ2fMnceD9Ixx4/wjrn9/K4YOtQWVX/XSDlJ+dcw0ADet2SmlGk9Df5s31O7l33q9pWLdTUiwAxxpbcdi7gmRu3bw/SMZb63Zit3cyVI51epn4t5Ps+0bo+6PlJ/2WUwEexuPFOqjjWK1WiouL2bFjxyDPdOjc/lkTqj0NqA68R5u7K2J5p9OF3eGQfiJ2hwM6u6gely7tO50D++6inOHgXLTa9MZkMvWrWIaDyK1FazYQaA2SSUo/aUeACci3Xj59GaY/C9okZceOQGpGMitWLmXTKwGFsG9Xc5Al8tUJwbpISRvLP98zj8OHAsrnEhJJzUimvbWDX9y7Vkpf8sA8suddQ3tbB81N7cyaOynouP/5i7qQc2k+2MaseZNC0pUw8b87wOlj1rYznClIYbTOjJoDqBiFn2/o4XlUCG6mqGDUDBxAFE1us9ksu0l0MHWUYPN6uN96mL+dPPscnF1kfLyb1ilzSNclhpR3Ol3U12/GDxhNwvvj6nbhdLm4+aYb2b13H65uF1PSU7FrjdJ+kimJH+XlBMnavWcfbW0nMJqSmDMrG6Mxuu/jhUxk5fJYlHw1F2AHxiqo8/k7YL4zOsfvw4I7s1j/vOD6NB9sl9LffG2XtJ29cDIA7a0Bq2TiDYISOnyoTUq7hER+18vF6ctf1++UFNZlqcnSdvMh65CUy9sn3eAIdFI74/ExWqdGI5mOZjS8Tg8P4mU+ICgYN9XoKA6S1dTUREFBQVCzpdlsprKykvz8/H6Pb7PZMJlMNDQ0UFVVJavOYHii/WhAsYg4u7jDepgPJv4gpPyevfu4asL3mZkVbELb7Q7q6jZTVHQ3druDd97dxsys6dy86EZAUCTvbNkWtG+3Objrzjuidi0XE5HdIve7yiSGCxnYwuT1W/6QwgryWXTrTGn78H4rAO2tHby1bqeUvvyXBYCgBEQmTxdMaZMx8MX8li4WzVjJnl1H+j3WxuqAwvrl7wOxq72W/svLpe7LgCn/wswkKe7SFw15wJPSvo+XgvKtVit5eXlYrVby8/Oprq6msLAQq9VKQUEBTU1NITKtVivTp0+ntraWwsJCqqqqgupYLJYhXRsIFssPjn7AS1026iddD5qA2fvQFVcxQ5eIqnl3iIt06mRHiGIBMBqTGDcueUAXZ87sbIxJSbyzZRvvb9+B3ebg5ptvHPJ1XKzIiLkodImmhsn7Vpko3N8orCCfSdMyGImgII43tmG3d7K3l3JY8sA8UjOSAWhuClg2aemC6ZU9bxIz5gesjuONrdw379eseHAt7a0dUvreXUKMBWDGDZNYtDhLOu4n/wjIHQyvfh0YY1WYFj7AreUnqPgdat5Hz7agvPLycmw2G2VlZdTV1VFUVERRUZEUD1i+fHmIvPLycqxWKy0tLWRmZlJSUkJNTQ3bt28HoKKiYkjXBjDq4918ePpLsJ0mv+Uj6ifMAEMiD11xFa/YO3jli+NgO03Gx6EKZrDMmZ2N3ebg6NHPmD8/J3KFOANy0c7nYjQmcvX8DGm/+WAb1WdbiADuuHeutP35ZwFlMfk6s7T91/9ZycO/WkpKWsDXe2vdTpYVVEn7vd2sOwoFmeJxvzrRQXtbQLZinIEpJEbrwkf4EzCjYwUa8lARHNA7ePAgAKWlpaxevZq8vDzy8vKw2WyUlJRQWVkZIq93nd7k5uZSXV3dbx0l1Jxuh057IMHZRf6xA6wcl84r9o6QvGe+aJEl1+UJ3+lq9559pKQkM3XqZP78541hA71xwiNDuShsGrSHybtEmSh0oxRWUMbCgixp+80/7eJYo+DXp6SNlWIhdnuXlA4weVp6kIwVK5fyl10ruefxQNv7scZWDh9sDXGzQIi/9L7re3cO3jW6NingBh3rjDCQ7uhheOoReGMt7N8blCXGTsaPH09paSk2m42qqipaWlqoqqoiMzNT8bn1Hi8zGEap+4n8a7RcZUjkyTGXh2RNNETumnDqVAcnv+rAmNR/UHb3nn0AzM/LYc7sbLJmTo8rmCEQOaCruwncG+VLbAGuHiBPaQtYytzIZYZAdq9gam8lUPLMUmm7uU9LkdE4Eru9E6MxoHRTM5JZvrKA9c9vkdIc9i5efTFgCQE80at1qT/5SrltjJbDZ7efPd7NumlhtPf6l2HVi8L2o/dA1iwpKz8/n6qqKql/hNjiE05B5Ofn09TUREVFRZCVYrFYKC4uJjMzk/379w/20lgy6jKeTL+GVW2fCAmGRJ5ISaf46AEKUtKD8pamZLDisiuD6rtcLurqNkv7TqcLvUEfEpy12x28++42/EB6eipzZmdLeVOnCAH9uvrNqIC8+TmkjEse9DVdbERWLk/kQbkC5TIQSShrKQIwThn6ccNw7XVC3KWTgL8uNj+L2G2BPLGlaO/OT/jVw+u55vo0Jk8X0t7bdCBIxqx5k3j87lBl0pfm/W0RywzEnNGBjlmvHnLw3KSR/btHa38bUCwAN9walF1SUkJZWZlksRw8eJDGxkZ27NjB9u3bMZvNUt+I8vJyjEajFGPJyMjAarXS0NBAS0uL1Mu0v7ErSnk69WquNCTydY8HW4+bVa2CMqk72QYp6axMv4bRGm2IYgHQ6/XcGaaVx2hMoiB/MQZD+HJTp0yWlEwcZURWLo/crWA80VneAxb0SQt9/uG5+qcRBzFGgxseyKJhXWjzs8i+Xc3StthS1HzIylcnOvjqRAeWTcE9fkeSyNrNy4Oan6+ans6WA8GdAqepltFJF0ffH7zlckuKDr5ngM+doEsIKBbLFrjUCF+0w8bX4LW3A5XuuwUW/0uQHDFwW1FRISkHEDpcidZLZmYmpaWlVFVV0dDQQH5+Po2NjZhMJoqKiqRu5iaTSWqKjsa0okVj03jqxKesavs0KL3uZBuqlAw2pQ5kJkfGYFA+ZWoc+URWLqON8NR/wdMKFExf9z8JoQOdXJLSYMoTCioMngW3zaTdGujHIjY/i6gQWnkAqWPc5OvM5N4xk88/68BxWmhNS716LNfnTuaBny0kyTiSP764Vap3/6MLQ4679PG5HG4UrJYTrR2MGac0ICVwNGcUE987w9EFY84mHIa8AaavmG2G37zUfx5QWVnJkiVLpA5xmZmZQb05Kysrg4bqi3mlpaXSsIC+daLB02cViOQiIbhCm74fPhZktztwulwY9HrsDgfGpCScZ2dbc7lcjEtOZs/efSQnJ5Oelsqpjg4hfVwyTqeLU6c6QCVYQfiJWzAKkTefS8XD0NwKG5+TL3kLwvgiPTAX+T1zAX74yjmxWgAWLc5i0eKsAfPL+ow7klMHCNuprj+53d3dYcsPxISRavz54wIJ6wcYVX7fLYJiuTz8fY3Uw7a/7uqZmZmDCvoqQVIwZ77kyTGXS/v9ITYhG41JiKPlxJ614r7L5cLvF4K39Ckjkp6WGp2TH4DeUy6YTCbp3ov3svez6L2dkZEhlRe785tMJqmH9LRp06R8cX4YUWa4KReijbL5XH78c2UKBmANgScaCT2Q/Tqk3zVgkfh8LhHKvrEWtrwFx4/A2HEw90eQd0tQAPdcEcsDF4dCfD4XeSibie7NZ2HNdWcHMkbqXDcfjtWA7u/Q+Fhg9rmB+N5CyPrtsAdxL3juWib84sQ5zyif5vKRu4Xfmg3wy3pwfAp8dDZzKtx+EzywuNc0l3cJlkjbG9D2FvzfcTj9oWCl6K+AjEJIvQXGKh/6HifOhUBNTY20HW0XU5wqo/f+uRqJPfgp5EUlI5f0u8K6O3HiXGyYTCby8/NDJtCOpnKx2WxB8k0mE4WFhVGTHw4p5uJwOLj00ktjflZ5cTW+iznm4nQ60Wg0Mb+8iLiQnbjeVDj8fj9dXV0XXMxFXOlzMCuFnmuGbbIotVod9UWRhgNxQTA5iOvLxPqyFT6fD5/PJ/u61Gq17IXhzic9PT1hl9XojUqlIiEhQfZ6QOcTJe+gWq2mp6fnO/EOQnSXrJGevLjqn9BEF3s3QmxNAHlfDAis/NfV1RWzL63X65WsFrloNBr8fr+0vG2s4ff7pWV0lXyx9Xo9TqczZhWn+A5qNBrZykVcC7y7uzsm1yr3+/3SOxht60pyiyBw8+SukncuERXFYJYwjeWF6NVqNVqtVrGL4/f7cblcMWmZiVbIYJYGFheij8WPwVAXoo/ld3BYF6KPEydOnGhy0c7nEidOnOElrlzixIkzLPw/7bp74omoK8YAAAAASUVORK5CYII=\"></p>"
+                  },
+                  {
+                    "label": "Pagamento com cartão de crédito",
+                    "content": "<p>Lorem ipsum dolor sit amet, consectur adipiscring elit, sed to eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>"
+                  },
+                  {
+                    "label": "Pagamento com Pix",
+                    "content": "<p>Lorem ipsum dolor sit amet, consectur adipiscring elit, sed to eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>"
+                  },
+                  {
+                    "label": "Vale compras ou vale Mercadorias",
+                    "content": "<p>Lorem ipsum dolor sit amet, consectur adipiscring elit, sed to eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>"
+                  },
+                  {
+                    "label": "Alterar forma de pagamento",
+                    "content": "<p>Lorem ipsum dolor sit amet, consectur adipiscring elit, sed to eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>"
+                  },
+                  {
+                    "label": "Não recebi o boleto para pagamento",
+                    "content": "<p>Lorem ipsum dolor sit amet, consectur adipiscring elit, sed to eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>"
+                  },
+                  {
+                    "label": "Meu boleto venceu e ainda não paguei",
+                    "content": "<p>Lorem ipsum dolor sit amet, consectur adipiscring elit, sed to eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>"
+                  },
+                  {
+                    "label": "Como utilizar vale Compras ou vale Trocas",
+                    "content": "<p>Lorem ipsum dolor sit amet, consectur adipiscring elit, sed to eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>"
+                  },
+                  {
+                    "label": "Promoções e descontos",
+                    "content": "<p>Lorem ipsum dolor sit amet, consectur adipiscring elit, sed to eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>"
+                  }
+                ],
+                "__resolveType": "deco-sites/technos/sections/Institutional/AccordionsContent.tsx"
+              },
+              "asideMenu": {
+                "__resolveType": "Aside Menu Global"
+              },
+              "__resolveType": "deco-sites/technos/sections/Institutional/InstitutionalPage.tsx"
+            },
+            "withContainer": true,
+            "verticalSpacing": "both"
+          }
+        ],
+        "__resolveType": "deco-sites/technos/sections/Container.tsx"
+      },
+      {
+        "__resolveType": "Footer Global"
+      }
+    ],
+    "__resolveType": "$live/pages/LivePage.tsx"
+  }
+}

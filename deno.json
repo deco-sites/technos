@@ -1,10 +1,9 @@
 {
   "imports": {
     "deco-sites/technos/": "./",
-
     "$store/": "./",
-    "deco/": "https://denopkg.com/deco-cx/deco@1.47.4/",
-    "apps/": "https://denopkg.com/deco-cx/apps@0.24.8/",
+    "deco/": "https://denopkg.com/deco-cx/deco@1.48.1/",
+    "apps/": "https://denopkg.com/deco-cx/apps@0.25.5/",
     "$fresh/": "https://deno.land/x/fresh@1.5.2/",
     "preact": "https://esm.sh/preact@10.18.1",
     "preact/": "https://esm.sh/preact@10.18.1/",
@@ -16,7 +15,7 @@
     "daisyui": "npm:daisyui@4.4.19"
   },
   "tasks": {
-    "start": "deno task bundle && deno run -A --unstable --env --watch=tailwind.css,sections/,functions/,loaders/,actions/,workflows/,accounts/,.env dev.ts",
+    "start": "deno task bundle && DECO_SITE_NAME=technos deno run -A --unstable --watch=tailwind.css,sections/,functions/,loaders/,actions/,workflows/,accounts/,.env dev.ts",
     "gen": "deno run -A dev.ts --gen-only",
     "play": "USE_LOCAL_STORAGE_ONLY=true deno task start",
     "component": "deno eval 'import \"deco/scripts/component.ts\"'",
