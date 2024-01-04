@@ -159,21 +159,18 @@ function ProductCard(
       </figure>
       {/* Prices & Name */}
       <div class="flex-auto flex flex-col p-2 gap-3 lg:gap-4">
-
         {l?.hide?.productName && l?.hide?.productDescription
           ? ""
           : (
             <div class="flex flex-col gap-0">
-                <h2
-                  class="text-base-content flex flex-col"
-                >
-                  <span class="uppercase w-4/5 mb-[5px] text-sm font-bold text-center mx-auto">
-                    {isVariantOf?.name?.split(" - ")[0]}
-                  </span>
-                  <span class="font-light text-xs text-center uppercase mb-[5px]">
-                    {isVariantOf?.name?.split(" - ")[1]}
-                  </span>
-                </h2>
+              <h2 class="text-base-content flex flex-col">
+                <span class="uppercase w-4/5 mb-[5px] text-sm font-bold text-center mx-auto">
+                  {isVariantOf?.name?.split(" - ")[0]}
+                </span>
+                <span class="font-light text-xs text-center uppercase mb-[5px]">
+                  {isVariantOf?.name?.split(" - ")[1]}
+                </span>
+              </h2>
             </div>
           )}
         {l?.hide?.allPrices ? "" : (
@@ -201,11 +198,11 @@ function ProductCard(
             </div>
           </div>
         )}
-          <div
-            class={`flex-auto flex items-end`}
-          >
-            {cta}
-          </div>
+        <div
+          class={`flex-auto flex items-end`}
+        >
+          {cta}
+        </div>
       </div>
     </div>
   );

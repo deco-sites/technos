@@ -104,13 +104,13 @@ function ProductInfo({ page }: Props) {
       </div>
       {/* Shipping Simulation */}
       <div class="mt-8">
-          <ShippingSimulation
-            items={[{
-              id: Number(product.sku),
-              quantity: 1,
-              seller: seller,
-            }]}
-          />
+        <ShippingSimulation
+          items={[{
+            id: Number(product.sku),
+            quantity: 1,
+            seller: seller,
+          }]}
+        />
       </div>
       {/* Description card */}
       <div class="mt-4 sm:mt-6">

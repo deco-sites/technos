@@ -1,12 +1,7 @@
 import type { Props as SearchbarProps } from "$store/components/search/Searchbar.tsx";
 import Icon from "$store/components/ui/Icon.tsx";
 import { MenuButton, SearchButton } from "$store/islands/Header/Buttons.tsx";
-import CartButtonLinx from "$store/islands/Header/Cart/linx.tsx";
-import CartButtonShopify from "$store/islands/Header/Cart/shopify.tsx";
-import CartButtonVDNA from "$store/islands/Header/Cart/vnda.tsx";
 import CartButtonVTEX from "$store/islands/Header/Cart/vtex.tsx";
-import CartButtonWake from "$store/islands/Header/Cart/wake.tsx";
-import CartButtonNuvemshop from "$store/islands/Header/Cart/nuvemshop.tsx";
 import Searchbar from "$store/islands/Header/Searchbar.tsx";
 import { usePlatform } from "$store/sdk/usePlatform.tsx";
 import type { SiteNavigationElement } from "apps/commerce/types.ts";
@@ -43,8 +38,7 @@ function Navbar({ items, searchbar, logo }: {
 
         <div class="flex gap-1">
           <SearchButton />
-          {platform === "vtex" && <CartButtonVTEX />}
-          {platform === "vnda" && <CartButtonVDNA />}
+          <CartButtonVTEX />
         </div>
       </div>
 
@@ -74,24 +68,7 @@ function Navbar({ items, searchbar, logo }: {
           >
             <Icon id="User" size={24} strokeWidth={0.4} />
           </a>
-          <a
-            class="btn btn-circle btn-sm btn-ghost"
-            href="/wishlist"
-            aria-label="Wishlist"
-          >
-            <Icon
-              id="Heart"
-              size={24}
-              strokeWidth={2}
-              fill="none"
-            />
-          </a>
-          {platform === "vtex" && <CartButtonVTEX />}
-          {platform === "vnda" && <CartButtonVDNA />}
-          {platform === "wake" && <CartButtonWake />}
-          {platform === "linx" && <CartButtonLinx />}
-          {platform === "shopify" && <CartButtonShopify />}
-          {platform === "nuvemshop" && <CartButtonNuvemshop />}
+          <CartButtonVTEX />
         </div>
       </div>
     </>
