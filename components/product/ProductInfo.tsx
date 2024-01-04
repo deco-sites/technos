@@ -1,36 +1,20 @@
 import { SendEventOnView } from "$store/components/Analytics.tsx";
 import Breadcrumb from "$store/components/ui/Breadcrumb.tsx";
-import AddToCartButtonLinx from "$store/islands/AddToCartButton/linx.tsx";
-import AddToCartButtonShopify from "$store/islands/AddToCartButton/shopify.tsx";
-import AddToCartButtonVNDA from "$store/islands/AddToCartButton/vnda.tsx";
 import AddToCartButtonVTEX from "$store/islands/AddToCartButton/vtex.tsx";
-import AddToCartButtonWake from "$store/islands/AddToCartButton/wake.tsx";
-import AddToCartButtonNuvemshop from "$store/islands/AddToCartButton/nuvemshop.tsx";
 import OutOfStock from "$store/islands/OutOfStock.tsx";
 import ShippingSimulation from "$store/islands/ShippingSimulation.tsx";
-import WishlistButton from "$store/islands/WishlistButton.tsx";
 import { formatPrice } from "$store/sdk/format.ts";
 import { useId } from "$store/sdk/useId.ts";
 import { useOffer } from "$store/sdk/useOffer.ts";
-import { usePlatform } from "$store/sdk/usePlatform.tsx";
 import { ProductDetailsPage } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import ProductSelector from "./ProductVariantSelector.tsx";
 
 interface Props {
   page: ProductDetailsPage | null;
-  layout: {
-    /**
-     * @title Product Name
-     * @description How product title will be displayed. Concat to concatenate product and sku names.
-     * @default product
-     */
-    name?: "concat" | "productGroup" | "product";
-  };
 }
 
-function ProductInfo({ page, layout }: Props) {
-  const platform = usePlatform();
+function ProductInfo({ page }: Props) {
   const id = useId();
 
   if (page === null) {
@@ -49,6 +33,7 @@ function ProductInfo({ page, layout }: Props) {
     isVariantOf,
     additionalProperty = [],
   } = product;
+  console.log(product);
   const description = product.description || isVariantOf?.description;
   const {
     price = 0,
@@ -76,21 +61,13 @@ function ProductInfo({ page, layout }: Props) {
       <Breadcrumb itemListElement={breadcrumb.itemListElement} />
       {/* Code and name */}
       <div class="mt-4 sm:mt-8">
-        <div>
-          {gtin && (
-            <span class="text-sm text-base-300">
-              Cod. {gtin}
+        <h1 class="font-bold text-lg text-[#4A4A4A]">
+          <div class="flex flex-col">
+            {isVariantOf?.name?.split(" - ")[0]}
+            <span class="font-light">
+              {isVariantOf?.name?.split(" - ")[1]}
             </span>
-          )}
-        </div>
-        <h1>
-          <span class="font-medium text-xl capitalize">
-            {layout?.name === "concat"
-              ? `${isVariantOf?.name} ${name}`
-              : layout?.name === "productGroup"
-              ? isVariantOf?.name
-              : name}
-          </span>
+          </div>
         </h1>
       </div>
       {/* Prices */}
@@ -117,61 +94,16 @@ function ProductInfo({ page, layout }: Props) {
       <div class="mt-4 sm:mt-10 flex flex-col gap-2">
         {availability === "https://schema.org/InStock"
           ? (
-            <>
-              {platform === "vtex" && (
-                <>
-                  <AddToCartButtonVTEX
-                    eventParams={{ items: [eventItem] }}
-                    productID={productID}
-                    seller={seller}
-                  />
-                  <WishlistButton
-                    variant="full"
-                    productID={productID}
-                    productGroupID={productGroupID}
-                  />
-                </>
-              )}
-              {platform === "wake" && (
-                <AddToCartButtonWake
-                  eventParams={{ items: [eventItem] }}
-                  productID={productID}
-                />
-              )}
-              {platform === "linx" && (
-                <AddToCartButtonLinx
-                  eventParams={{ items: [eventItem] }}
-                  productID={productID}
-                  productGroupID={productGroupID}
-                />
-              )}
-              {platform === "vnda" && (
-                <AddToCartButtonVNDA
-                  eventParams={{ items: [eventItem] }}
-                  productID={productID}
-                  additionalProperty={additionalProperty}
-                />
-              )}
-              {platform === "shopify" && (
-                <AddToCartButtonShopify
-                  eventParams={{ items: [eventItem] }}
-                  productID={productID}
-                />
-              )}
-              {platform === "nuvemshop" && (
-                <AddToCartButtonNuvemshop
-                  productGroupID={productGroupID}
-                  eventParams={{ items: [eventItem] }}
-                  additionalProperty={additionalProperty}
-                />
-              )}
-            </>
+            <AddToCartButtonVTEX
+              eventParams={{ items: [eventItem] }}
+              productID={productID}
+              seller={seller}
+            />
           )
           : <OutOfStock productID={productID} />}
       </div>
       {/* Shipping Simulation */}
       <div class="mt-8">
-        {platform === "vtex" && (
           <ShippingSimulation
             items={[{
               id: Number(product.sku),
@@ -179,7 +111,6 @@ function ProductInfo({ page, layout }: Props) {
               seller: seller,
             }]}
           />
-        )}
       </div>
       {/* Description card */}
       <div class="mt-4 sm:mt-6">
