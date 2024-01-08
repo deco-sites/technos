@@ -59,8 +59,12 @@ function Newsletter(
     <>
       {open.value && (
         <div class="block">
-          <div class="bg-black opacity-50 fixed inset-0 z-40"></div>
-          <div class="fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full max-h-[550px] max-w-[745px] z-50">
+          <div
+            class="bg-black opacity-50 fixed inset-0 z-40"
+            onClick={() => open.value = false}
+          >
+          </div>
+          <div class="fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full max-h-[550px] max-w-[745px] z-50 max-md:w-[90%] max-md:max-w-[350px] max-md:max-h-[500px]">
             <button
               class="absolute top-[5px] right-0 translate-x-1/2 bg-[#333333] border-none rounded-full p-[0.2rem] cursor-pointer text-white"
               onClick={() => open.value = false}
@@ -84,7 +88,7 @@ function Newsletter(
                       height={550}
                     />
                     <img
-                      class="w-full"
+                      class="w-full h-full object-cover absolute inset-0"
                       sizes="(max-width: 640px) 100vw, 30vw"
                       src={mobile.success}
                       alt="Imagem de fundo do modal de newsletter"
@@ -108,7 +112,7 @@ function Newsletter(
                       height={550}
                     />
                     <img
-                      class="w-full"
+                      class="w-full h-full object-cover absolute inset-0"
                       sizes="(max-width: 640px) 100vw, 30vw"
                       src={mobile.initial}
                       alt="Imagem de fundo do modal de newsletter"
@@ -122,11 +126,11 @@ function Newsletter(
               <>
                 {loading.value
                   ? (
-                    <span class="loading loading-spinner relative top-3/4 left-[50px] -translate-y-1/2" />
+                    <span class="loading loading-spinner relative top-3/4 left-[50px] md:-translate-y-1/2 max-md:-translate-x-1/2 max-md:top-[20%] max-md:left-1/2" />
                   )
                   : (
                     <form
-                      class="flex flex-col items-start justify-center gap-4 relative top-3/4 left-[50px] -translate-y-1/2"
+                      class="flex flex-col items-start justify-center gap-4 relative top-3/4 left-[50px] md:-translate-y-1/2 max-md:items-center max-md:gap-[0.8rem] max-md:px-4 max-md:-translate-x-1/2 max-md:top-[20%] max-md:left-1/2"
                       onSubmit={handleSubmit}
                     >
                       <input
@@ -143,7 +147,7 @@ function Newsletter(
                         required
                         placeholder="E-mail:"
                       />
-                      <button class="border-none py-2 px-4 bg-[#f70000] text-white cursor-pointer font-bold font-arial">
+                      <button class="border-none py-2 px-4 bg-[#f70000] text-white cursor-pointer font-bold font-arial text-sm">
                         ASSINAR
                       </button>
                       <div class="flex items-center gap-[1ch] text-white">
