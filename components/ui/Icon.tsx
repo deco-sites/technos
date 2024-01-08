@@ -40,6 +40,7 @@ export type AvailableIcons =
   | "Visa"
   | "WhatsApp"
   | "XMark"
+  | "CloseNewsletter"
   | "Zoom";
 
 interface Props extends JSX.SVGAttributes<SVGSVGElement> {
