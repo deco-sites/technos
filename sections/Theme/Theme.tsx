@@ -256,8 +256,7 @@ function Section({
     ...toVariables(theme),
     [
       "--font-family",
-      font?.family ||
-      "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif",
+      "Montserrat",
     ],
   ]
     .map(([name, value]) => ({ name, value }));
